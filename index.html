@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nenufea</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Alert Message -->
+      <div id="MessageDiv">
+        <div>
+          <p>Vous souhaitez vendre sur Nenufea : <a href="#">Inscrivez vous ici</a>
+          <span><img src="images/headset.ico"style="height: 13px"/>+33 6 60 11 68 53</span></p>
+        </div>
+      </div>
+      <!-- Navigation Bar -->
+      <nav id="NavBar">
+        <a href="#"><img src="images/logo.png" id="NavLogo" alt="" /></a>
+        <ul class="NavList">
+          <li class="NavListItem"><a href="#">Maquillage</a></li>
+          <li class="NavListItem"><a href="#">Visage</a></li>
+          <li class="NavListItem"><a href="#">Corps</a></li>
+          <li class="NavListItem"><a href="#">Cheveux</a></li>
+          <li class="NavListItem"><a href="#">Hygiène</a></li>
+          <li class="NavListItem"><a href="#">Bien-être</a></li>
+          <li class="NavListItem"><a href="#">DIY</a></li>
+          <li class="NavListItem"><a href="#">Coffrets</a></li>
+          <li class="NavListItem"><a href="#">Artisants</a></li>
+        </ul>
+        <div class="Profile">
+          <div class="UserInfos">
+            <div class="UserImg">
+                <i class="far fa-user"></i>
+            </div>
+            <div class="UserName">John Doe</div>
+          </div>
+          <div class="Favorite">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="20"
+                height="20"
+                viewBox="0 0 172 172"
+                style="fill: #000000">
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#44b39b">
+                    <path
+                      d="M53.75,25.63462c-11.42187,0 -21.8101,3.95372 -29.14904,11.16346c-7.33894,7.20974 -11.37019,17.52044 -11.37019,29.35577c0,20.02704 12.27464,34.96334 26.25481,47.54808c13.98017,12.58474 30.28606,23.72236 41.34615,36.79808c1.21454,1.52464 3.02344,2.42909 4.96154,2.48077h0.41346c1.9381,-0.05168 3.74699,-0.95613 4.96154,-2.48077c11.0601,-13.07572 27.36599,-24.21334 41.34615,-36.79808c13.98017,-12.58474 26.25481,-27.52103 26.25481,-47.54808c0,-11.83533 -4.23798,-22.14603 -11.57692,-29.35577c-7.33894,-7.20974 -17.52043,-11.16346 -28.94231,-11.16346c-11.31851,0 -20.59555,6.17608 -27.08173,11.78365c-3.17849,2.73919 -3.33353,3.48858 -5.16827,5.58173c-1.80889,-2.09315 -1.98978,-2.84254 -5.16827,-5.58173c-6.46033,-5.60757 -15.76322,-11.78365 -27.08173,-11.78365zM53.75,38.86538c6.22776,0 13.17909,4.16046 18.39904,8.68269c5.21996,4.52224 8.47596,8.88942 8.47596,8.88942c1.24038,1.73137 3.25601,2.76503 5.375,2.76503c2.11899,0 4.13462,-1.03365 5.375,-2.76503c0,0 3.23017,-4.36719 8.47596,-8.88942c5.24579,-4.52224 12.14544,-8.68269 18.39904,-8.68269c8.5018,0 15.19471,2.89423 19.84615,7.44231c4.65144,4.54808 7.44231,10.98257 7.44231,19.84615c0,14.65204 -8.86358,25.86719 -21.91346,37.625c-11.55108,10.41406 -25.66046,21.08654 -37.625,33.69712c-11.99038,-12.66226 -26.04808,-23.28305 -37.625,-33.69712c-13.04988,-11.75781 -21.91346,-22.97296 -21.91346,-37.625c0,-8.86358 2.79087,-15.29808 7.44231,-19.84615c4.65144,-4.54808 11.31851,-7.44231 19.84615,-7.44231z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="Cart">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="20"
+                height="20"
+                viewBox="0 0 172 172"
+                style="fill: #000000"
+              >
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#44b39b">
+                    <path
+                      d="M4.75481,0c-3.64363,0.51683 -6.20192,3.90204 -5.6851,7.54567c0.51683,3.64363 3.90204,6.20192 7.54567,5.6851h22.94712c3.79868,0 5.01322,0.7494 5.99519,1.65385c0.98197,0.90445 2.22236,2.6875 3.30769,6.40865c2.22236,7.51983 31.00962,105.43269 31.00962,105.43269c0.05169,0.20673 0.12921,0.41346 0.20673,0.62019c0,0 7.33894,18.19231 25.84135,18.19231h51.88942c2.3774,0.02584 4.59976,-1.21454 5.8143,-3.28185c1.18871,-2.06731 1.18871,-4.59976 0,-6.66706c-1.21454,-2.06731 -3.4369,-3.30769 -5.8143,-3.28185h-51.88942c-9.76803,0 -13.64423,-9.92308 -13.64423,-9.92308c0,-0.02584 -0.95613,-3.07512 -1.03365,-3.30769h53.75c6.82212,0 9.89724,-5.71094 10.54327,-7.85577l23.77404,-51.0625c3.66947,-8.83774 1.75721,-20.46635 -11.78365,-20.46635h-95.92308c-1.11118,0 -2.32572,0.28426 -3.51442,0.62019c-2.3774,-8.08834 -6.1244,-21.11238 -6.61538,-22.74038c-1.39543,-4.72897 -3.23017,-9.17368 -7.02885,-12.61058c-3.79868,-3.4369 -9.04447,-4.96154 -14.88462,-4.96154h-22.94712c-0.20673,0 -0.41346,0 -0.62019,0c-0.20673,0 -0.41346,0 -0.62019,0c-0.20673,0 -0.41346,0 -0.62019,0zM63.67308,53.33654h27.90865v11.78365h-24.1875l-3.10096,-9.92308c-0.20673,-0.72356 -0.54267,-1.36959 -0.62019,-1.86058zM100.26442,53.33654h17.77885v11.78365h-17.77885zM126.72596,53.33654h30.59615c-0.07753,0.46515 -0.20673,0.87861 -0.41346,1.44712l-4.75481,10.33654h-25.42788zM70.08173,73.80288h21.5v11.16346h-17.98558zM100.26442,73.80288h17.77885v11.16346h-17.77885zM126.72596,73.80288h21.29327l-5.16827,11.16346h-16.125zM76.28365,93.64904h15.29808v11.78365h-10.95673c-0.25841,0 -0.41346,-0.07753 -0.62019,-0.20673zM100.26442,93.64904h17.77885v11.78365h-17.77885zM126.72596,93.64904h12.19712l-5.58173,11.78365h-6.61538zM92.61538,146.77885c-6.61538,0 -11.99038,5.375 -11.99038,11.99038c0,6.61538 5.375,11.99038 11.99038,11.99038c6.61538,0 11.99038,-5.375 11.99038,-11.99038c0,-6.61538 -5.375,-11.99038 -11.99038,-11.99038zM132.30769,146.77885c-6.61538,0 -11.99038,5.375 -11.99038,11.99038c0,6.61538 5.375,11.99038 11.99038,11.99038c6.61538,0 11.99038,-5.375 11.99038,-11.99038c0,-6.61538 -5.375,-11.99038 -11.99038,-11.99038z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <span class="badge">2</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Page -->
+    <main id="Container">
+      <!-- Item Presentation -->
+      <div id="ItemDetails">
+        <div class="ImgGallery">
+          <div class="ImageShowed">
+            <img id="ImageShowed"src="images/image1.bmp"
+              alt=""srcset=""/>
+          </div>
+          <div class="GallerySilde">
+            <div id="LeftArrow" class="Arrow" onclick="ScrollLeft()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="20"
+                height="20"
+                viewBox="0 0 172 172"
+                style="fill: #000000"
+              >
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#333333">
+                    <path
+                      d="M124.45347,13.14653c-2.23887,-2.23819 -5.86807,-2.23819 -8.10693,0l-68.8,68.8c-2.23819,2.23887 -2.23819,5.86807 0,8.10693l68.8,68.8c2.24964,2.17277 5.82555,2.1417 8.03709,-0.06984c2.21154,-2.21154 2.24261,-5.78745 0.06984,-8.03709l-64.74653,-64.74653l64.74653,-64.74653c2.23819,-2.23887 2.23819,-5.86807 0,-8.10693z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="Gallery" id="Slider">
+              <img class="GalleryImg ActiveImg" src="images/image1.bmp" alt="" srcset=""/>
+              <img class="GalleryImg" src="images/image2.bmp" alt="" srcset=""/>
+              <img class="GalleryImg" src="images/image3.bmp" alt=""/>
+              <img class="GalleryImg" src="images/image4.bmp" alt="" />
+              <img class="GalleryImg" src="images/image5.bmp" alt="" />
+            </div>
+            <div id="RightArrow" class="Arrow" onclick="ScrollRight()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="20"
+                height="20"
+                viewBox="0 0 172 172"
+                style="fill: #000000" >
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#333333">
+                    <path d="M124.45347,13.14653c-2.23887,-2.23819 -5.86807,-2.23819 -8.10693,0l-68.8,68.8c-2.23819,2.23887 -2.23819,5.86807 0,8.10693l68.8,68.8c2.24964,2.17277 5.82555,2.1417 8.03709,-0.06984c2.21154,-2.21154 2.24261,-5.78745 0.06984,-8.03709l-64.74653,-64.74653l64.74653,-64.74653c2.23819,-2.23887 2.23819,-5.86807 0,-8.10693z"></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="ItemDetail">
+          <h4>Huiles Essenteilles</h4>
+          <h3>Pack Huiles Essenteilles</h3>
+          <div class="ItemDetailTags">
+            <span>Products naturels</span>
+            <span>Sains</span>
+            <span>Bio</span>
+            <span>Vegan</span>
+            <span>100% recycle</span>
+          </div>
+          <div class="ItemDetailPrice">
+            <div class="NewPrice">
+              <h3>96.<h4>00</h4> &#8364; </h3>
+            </div>
+            <div class="OldPrice"><h3>120.00 &#8364;</h3></div>
+            <div class="Discount">-20%</div>
+          </div>
+          <div class="OliviaHealth">
+            <div class="OliviaHealthLogo"><i class="fas fa-feather"></i></div>
+            <span class="OliviaHealthTitle">Olivia health</span>
+          </div>
+          <div class="BaseHuile">
+            <div>Base d'huile</div>
+            <ul>
+              <li class="BaseHuileItem BaseHuileSelected">Jasmin</li>
+              <li class="BaseHuileItem">Crocus</li>
+              <li class="BaseHuileItem">Dahlia</li>
+              <li class="BaseHuileItem">Edelweiss</li>
+              <li class="BaseHuileItem">Lavande</li>
+            </ul>
+          </div>
+          <div class="Origine">
+            <div>Origine</div>
+            <ul>
+              <li class="OrigineItem OrigineSelected">Mandarine Rouge</li>
+              <li class="OrigineItem">Menthe poivrée</li>
+              <li class="OrigineItem">Lavande Aspic</li>
+              <li class="OrigineItem">Sapin baumier</li>
+              <li class="OrigineItem">Marjolaine à Coquilles</li>
+            </ul>
+          </div>
+          <div class="ProductCommand">
+            <div>Quantité</div>
+            <div class="ProductQuantite">
+              <span><input type="number" value="12" name="Quantite" id="Quantite" /></span>
+              <span
+                ><input
+                  type="button"
+                  value="Ajouter au panier"
+                  class="AjouterPanierBtn"
+              /></span>
+              <div class="favorite">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 172 172"
+                  style="fill: #000000" >
+                  <g
+                    fill="none"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#cccccc">
+                      <path
+                        d="M118.25,21.5c-20.7475,0 -32.25,14.97833 -32.25,14.97833c0,0 -11.5025,-14.97833 -32.25,-14.97833c-21.77233,0 -39.41667,17.64433 -39.41667,39.41667c0,29.89217 35.20267,58.85983 45.01383,68.01167c11.30183,10.535 26.65283,24.08 26.65283,24.08c0,0 15.351,-13.545 26.65283,-24.08c9.81117,-9.15183 45.01383,-38.1195 45.01383,-68.01167c0,-21.77233 -17.64433,-39.41667 -39.41667,-39.41667zM106.1455,115.455c-1.2685,1.14667 -2.37217,2.14283 -3.268,2.98133c-5.38217,5.01667 -11.74617,10.7715 -16.8775,15.3725c-5.13133,-4.601 -11.5025,-10.363 -16.8775,-15.3725c-0.903,-0.8385 -2.00667,-1.84183 -3.268,-2.98133c-10.17667,-9.19483 -37.18783,-33.61883 -37.18783,-54.53833c0,-13.83167 11.25167,-25.08333 25.08333,-25.08333c13.0935,0 20.683,9.1375 20.88367,9.374l11.36633,12.126l11.36633,-12.126c0.07167,-0.09317 7.79017,-9.374 20.88367,-9.374c13.83167,0 25.08333,11.25167 25.08333,25.08333c0,20.9195 -27.01117,45.3435 -37.18783,54.53833z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button id="TelechargerDetails">
+            <i class="fa fa-download"></i>  Télécharger les détails du produit
+          </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item Description -->
+      <div id="ItemDescription">
+        <div class="ItemDescriptionItems">
+          <ul>
+            <li id="Composition" onclick="CompositionClick()">Composition</li>
+            <li id="ProduitDetail" onclick="ProduitDetailClick()">
+              Détail produit
+            </li>
+          </ul>
+        </div>
+        <div class="ItemDescriptionDes" id="ItemDescriptionDes"></div>
+      </div>
+      <!-- Recommendation Items -->
+      <div id="Recommendation">
+        <h1>Produits similaires</h1>
+        <div class="Recommendation">
+          <div class="RecProduct">
+            <a href="#">
+              <div class="RecProductImg">
+                <img class="heartp" src="images/hearts.ico" width="15px" height="15px">
+                <img src="images/imgshampoing.bmp" alt="Product" />
+              </div>
+              <div class="RecProductDes">
+                <h3>Shampoing naturel</h3>
+                <h5>Huiles essenteilles</h5>
+                <h6>Olivia health</h6>
+                <div class="RecProductPrice">
+                  <h3>
+                    120.
+                    <h4>00</h4>
+                    &#8364;
+                  </h3>
+                </div>
+                <div class="RecProductTags">
+                  <span>Products naturels</span>
+                  <span>Sains</span>
+                  <span>Bio</span>
+                  <span>Vegan</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="RecProduct">
+            <a href="#">
+              <div class="RecProductImg">
+                <img class="heartp" src="images/hearts.ico" width="15px" height="15px">
+                <img src="images/image1.bmp" alt="Product" height="200px" width="281px"/>
+              </div>
+              <div class="RecProductDes">
+                <h3>Pack Huiles Essenteilles</h3>
+                <h5>Huiles essenteilles</h5>
+                <h6>Olivia health</h6>
+                <div class="RecProductPrice">
+                  <h3>
+                    120.
+                    <h4>00</h4>
+                    &#8364;
+                  </h3>
+                </div>
+                <div class="RecProductTags">
+                  <span>Products naturels</span>
+                  <span>Sains</span>
+                  <span>Bio</span>
+                  <span>Vegan</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="RecProduct">
+            <a href="#">
+              <div class="RecProductImg">
+                <img class="heartp" src="images/hearts.ico" width="15px" height="15px">
+                <img src="images/imgsavon.PNG" alt="Product" height="200px" width="281px"/>
+              </div>
+              <div class="RecProductDes">
+                <h3>Shampoing naturel</h3>
+                <h5>Huiles essenteilles</h5>
+                <h6>Olivia health</h6>
+                <div class="RecProductPrice">
+                  <h3>
+                    120.
+                    <h4>00</h4>
+                    &#8364;
+                  </h3>
+                </div>
+                <div class="RecProductTags">
+                  <span>Products naturels</span>
+                  <span>Sains</span>
+                  <span>Bio</span>
+                  <span>Vegan</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="RecProduct">
+            <a href="#">
+              <div class="RecProductImg">
+                <img class="heartp" src="images/hearts.ico" width="15px" height="15px">
+                <img class="imgproduit" src="images/imghuile.PNG" alt="Product" height="200px" width="281px"/>
+              </div>
+              <div class="RecProductDes">
+                <h3>Shampoing naturel</h3>
+                <h5>Huiles essenteilles</h5>
+                <h6>Olivia health</h6>
+                <div class="RecProductPrice">
+                  <h3>
+                    120.
+                    <h4>00</h4>
+                    &#8364;
+                  </h3>
+                </div>
+                <div class="RecProductTags">
+                  <span>Products naturels</span>
+                  <span>Sains</span>
+                  <span>Bio</span>
+                  <span>Vegan</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Service Description -->
+      <div id="ServiceDescription">
+        <div class="Paiement">
+          <div class="ServiceDescriptionImg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="20"
+              viewBox="0 0 172 172"
+              style="fill: #000000"
+            >
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#44b39b">
+                  <path
+                    d="M82.27885,1.24038l-82.27885,32.45673v88.89423l99.23077,48.78846l72.76923,-48.78846v-88.89423zM82.48558,15.50481l74.21635,26.66827l-17.57212,9.30288l-74.62981,-28.94231zM46.51442,29.76923l77.11058,29.97596l-20.46635,10.75l-80.41827,-31.42308zM13.64423,42.58654l85.58654,33.49038v79.38462l-1.03365,0.62019l-84.96635,-41.75962v-71.52885zM43,70.49519l-9.71635,12.61058l6.40865,2.06731v18.19231l6.61538,2.48077v-18.39904l6.61538,2.06731zM69.46154,79.59135l-9.92308,12.81731l6.61538,2.27404v20.05288l6.61538,2.48077v-20.25962l6.40865,2.06731zM33.07692,106.05288v8.0625l46.30769,21.91346v-8.26923z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="ServiceDescriptionHead">
+            <h4>Paiement en ligne 100% sécurisé</h4>
+          </div>
+          <div class="ServiceDescriptionP"><p>Carte bancaire - Paypal</p></div>
+        </div>
+        <div class="ClientSevice">
+          <div class="ServiceDescriptionImg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="20"
+              viewBox="0 0 172 172"
+              style="fill: #000000">
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#44b39b">
+                  <path
+                    d="M170.42368,91.6851l-10.05228,-15.84074l5.94351,-17.77885c0.82692,-2.42909 -0.18089,-5.09074 -2.40324,-6.38281l-16.25421,-9.35456l-2.9976,-18.52825c-0.41346,-2.53245 -2.55829,-4.41887 -5.09075,-4.52223l-18.76081,-0.72356l-11.26683,-15.03967c-1.52464,-2.04147 -4.31551,-2.71334 -6.58954,-1.62801l-16.95192,8.0625l-16.95192,-8.0625c-2.29988,-1.08533 -5.0649,-0.41346 -6.61538,1.62801l-11.24099,15.03967l-18.76081,0.72356c-2.53246,0.10337 -4.67728,1.98978 -5.09074,4.52223l-2.9976,18.5024l-16.25421,9.38041c-2.22235,1.26622 -3.23017,3.92788 -2.42908,6.35697l5.96935,17.80469l-10.05229,15.84074c-1.36959,2.17067 -1.00781,4.98738 0.82692,6.77044l13.54087,12.99819l-1.49879,18.68329c-0.20673,2.55829 1.39543,4.88401 3.85036,5.60757l18.03726,5.19412l7.33894,17.26202c1.00781,2.35156 3.51442,3.72115 6.02103,3.17848l18.3732,-3.77283l14.52283,11.88702c0.98197,0.80108 2.19651,1.21454 3.41106,1.21454c1.21454,0 2.40324,-0.41346 3.41106,-1.21454l14.52284,-11.88702l18.37319,3.77283c2.50662,0.54267 5.03906,-0.80108 6.02104,-3.17848l7.33894,-17.26202l18.03726,-5.19412c2.45493,-0.69771 4.05709,-3.04928 3.85036,-5.60757l-1.49879,-18.68329l13.54087,-12.99819c1.83474,-1.78306 2.19651,-4.59976 0.82692,-6.77044zM124.89122,65.81791l-37.65084,56.41166c-1.42128,2.09315 -3.64363,3.51442 -5.8143,3.51442c-2.19651,0 -4.6256,-1.24038 -6.20192,-2.79087l-27.6244,-28.08954c-1.88642,-1.91226 -1.88642,-5.01322 0,-6.95132l6.82212,-6.92548c1.88642,-1.91226 4.93569,-1.91226 6.82212,0l17.98558,18.26983l29.66587,-44.44712c1.47296,-2.24819 4.49639,-2.81671 6.6929,-1.29206l8.01082,5.50421c2.19651,1.4988 2.76503,4.57392 1.29206,6.79628z"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="ServiceDescriptionHead"><h4>Service Client</h4></div>
+          <div class="ServiceDescriptionP">
+            <p>
+              +33 7 78 95 86 45 du lundi au vendredi de 9h à 13h et de 14h à 17h
+            </p>
+          </div>
+        </div>
+        <div class="Contact">
+          <div class="ServiceDescriptionImg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="20"
+              viewBox="0 0 172 172"
+              style="fill: #000000">
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#44b39b">
+                  <path
+                    d="M86,0.20673c-34.42067,0 -63.44051,23.85156 -72.76923,56.4375c-8.34676,5.03906 -13.23077,14.70372 -13.23077,26.04808c0,16.4351 10.02644,29.76923 26.46154,29.76923c3.66947,0 6.61538,-2.94591 6.61538,-6.61538v-46.30769c0,-3.04928 -2.17067,-5.42668 -4.96154,-6.20192c9.66467,-23.69651 31.96574,-40.3125 57.88462,-40.3125c25.91887,0 48.21996,16.61599 57.88462,40.3125c-2.79087,0.77524 -4.96154,3.15265 -4.96154,6.20192v46.30769c0,3.66947 2.94592,6.61538 6.61538,6.61538c1.55048,0 2.92007,-0.18089 4.34135,-0.41346c-2.14483,12.35217 -7.3131,21.55169 -12.61058,27.90865c-3.30769,3.97957 -6.66706,6.84796 -9.30288,8.68269c-1.31791,0.93029 -2.32572,1.4988 -3.10096,1.86058c-0.38762,0.18089 -0.69772,0.36178 -0.82692,0.41346h-12.40385c-2.3774,-6.89964 -9.97476,-11.99038 -19.01923,-11.99038c-10.95673,0 -19.84615,7.41647 -19.84615,16.53846c0,9.12199 8.88942,16.53846 19.84615,16.53846c9.04447,0 16.64183,-5.09074 19.01923,-11.99038h13.02404c2.2482,0 2.81671,-0.59435 4.13462,-1.24038c1.31791,-0.64603 2.89423,-1.52464 4.54808,-2.6875c3.30769,-2.32572 7.3131,-5.6851 11.16346,-10.33654c6.97717,-8.39844 13.46334,-20.87981 15.09135,-37.625c7.80409,-5.16827 12.40385,-14.49699 12.40385,-25.42788c0,-11.34435 -4.88401,-21.00901 -13.23077,-26.04808c-9.32872,-32.58594 -38.34856,-56.4375 -72.76923,-56.4375z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="ServiceDescriptionHead">
+            <h4>Besoin d'un conseil ?</h4>
+          </div>
+          <div class="ServiceDescriptionP">
+            <p>contactez-nous par formulaire</p>
+          </div>
+        </div>
+        <div class="Produits">
+          <div class="ServiceDescriptionImg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="20"
+              viewBox="0 0 172 172"
+              style="fill: #000000">
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#44b39b">
+                  <path
+                    d="M0,27.52v6.88h96.6425c1.37063,0 3.1175,1.74688 3.1175,3.1175v93.2025h-34.7225c-1.63937,-9.75562 -10.11844,-17.2 -20.3175,-17.2c-10.19906,0 -18.67812,7.44438 -20.3175,17.2h-14.0825c-1.90812,0 -3.44,-1.53187 -3.44,-3.44v-30.96h-6.88v30.96c0,5.65719 4.66281,10.32 10.32,10.32h14.0825c1.63938,9.75563 10.11844,17.2 20.3175,17.2c10.19906,0 18.67813,-7.44437 20.3175,-17.2h52.245c1.63938,9.75563 10.11844,17.2 20.3175,17.2c10.19906,0 18.67813,-7.44437 20.3175,-17.2h3.7625c2.86219,0 5.375,-1.29 7.2025,-3.1175c1.8275,-1.8275 3.1175,-4.34031 3.1175,-7.2025v-33.0025c0,-3.87 -1.47812,-7.4175 -2.795,-10.105c-1.31687,-2.6875 -2.6875,-4.6225 -2.6875,-4.6225v-0.1075l-14.0825,-18.92h-0.1075v-0.1075c-3.05031,-3.81625 -7.94156,-8.815 -14.7275,-8.815h-27.52c-1.23625,0 -2.365,0.22844 -3.44,0.645v-14.7275c0,-5.50937 -4.48812,-9.9975 -9.9975,-9.9975zM0,41.28v6.88h61.92v-6.88zM0,55.04v6.88h51.6v-6.88zM110.08,58.48h13.76v30.96c0,2.86219 1.29,5.375 3.1175,7.2025c1.8275,1.8275 4.34031,3.1175 7.2025,3.1175h30.96v27.52c0,0.57781 -0.43,1.505 -1.1825,2.2575c-0.7525,0.7525 -1.67969,1.1825 -2.2575,1.1825h-3.7625c-1.63937,-9.75562 -10.11844,-17.2 -20.3175,-17.2c-10.19906,0 -18.67812,7.44438 -20.3175,17.2h-10.6425v-68.8c0,-0.57781 0.43,-1.505 1.1825,-2.2575c0.7525,-0.7525 1.67969,-1.1825 2.2575,-1.1825zM130.72,58.48h6.88c2.83531,0 6.78594,3.18469 9.245,6.235l14.0825,18.8125l0.1075,0.1075c0.06719,0.09406 0.99438,1.41094 2.0425,3.5475c0.87344,1.77375 1.33031,3.88344 1.6125,5.6975h-30.53c-0.57781,0 -1.505,-0.43 -2.2575,-1.1825c-0.7525,-0.7525 -1.1825,-1.67969 -1.1825,-2.2575zM0,68.8v6.88h41.28v-6.88zM0,82.56v6.88h30.96v-6.88zM44.72,120.4c7.64594,0 13.76,6.11406 13.76,13.76c0,7.64594 -6.11406,13.76 -13.76,13.76c-7.64594,0 -13.76,-6.11406 -13.76,-13.76c0,-7.64594 6.11406,-13.76 13.76,-13.76zM137.6,120.4c7.64594,0 13.76,6.11406 13.76,13.76c0,7.64594 -6.11406,13.76 -13.76,13.76c-7.64594,0 -13.76,-6.11406 -13.76,-13.76c0,-7.64594 6.11406,-13.76 13.76,-13.76z"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="ServiceDescriptionHead"><h4>Produits</h4></div>
+          <div class="ServiceDescriptionP">
+            <p>Pour une consommation raisonnée et écologique</p>
+          </div>
+        </div>
+      </div>
+      <!-- Email Abonnement -->
+      <div id="EmailAbonnement">
+        <div class="Newsletter">
+          <p>Je m'abonne à la newsletter</p>
+        </div>
+        <div class="SentEmailForm">
+          <form action="#">
+            <div>
+              <input type="text" class="TextInput" placeholder="Votre email" />
+              <div id="SentButton">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 172 172"
+                    style="fill: #000000">
+                    <g
+                      fill="none"
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal">
+                      <path d="M0,172v-172h172v172z" fill="none"></path>
+                      <g fill="#ffffff">
+                        <path
+                          d="M168.2375,0c-0.45687,0.05375 -0.88687,0.20156 -1.29,0.43l-165.12,89.44c-1.19594,0.645 -1.89469,1.935 -1.78719,3.29219c0.12094,1.35719 1.03469,2.51281 2.32469,2.94281l46.87,15.3725l-4.515,46.44c-0.18812,1.505 0.645,2.95625 2.0425,3.56094c1.3975,0.60469 3.02344,0.20156 3.9775,-0.98094l29.5625,-33.4325l44.6125,43.9675c0.87344,0.86 2.13656,1.1825 3.31906,0.84656c1.1825,-0.33594 2.08281,-1.26313 2.37844,-2.45906l41.28,-165.12c0.30906,-1.08844 0.04031,-2.2575 -0.68531,-3.1175c-0.73906,-0.86 -1.84094,-1.30344 -2.96969,-1.1825zM163.2925,10.105l-37.9475,151.79l-40.7425,-40.205l59.2325,-81.8075c1.30344,-1.37062 1.26313,-3.53406 -0.1075,-4.8375c-1.37062,-1.30344 -3.53406,-1.26312 -4.8375,0.1075l-86.5375,70.09l-40.3125,-13.115zM123.0875,56.76l-45.15,62.6725c-0.12094,0.13438 -0.22844,0.28219 -0.3225,0.43l-0.215,0.215c-0.08062,0.1075 -0.14781,0.215 -0.215,0.3225l-24.6175,27.6275l3.655,-37.195z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="CheckboxP">
+              <input type="checkbox" name="" id="" />
+              <p>
+                En cochant et validant, j'accepte de recevoir par email les
+                newsletters de Nenufea. <br />Mes données seront traitées
+                conformément à la
+                <a href="#">Politique de Gestion des Données</a><br />Personnelles que j'ai lue et acceptée.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Presentation Paraghraph -->
+      <div id="PresentationParagraph">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed
+          sodales mauris, eget laoreet nisi. Aenean eu leo et orci iaculis
+          gravida. Proin nec quam quis quam convallis fermentum. Suspendisse id
+          efficitur urna. Quisque pretium, orci a pretium sagittis, nisi libero
+          consectetur mauris, vitae mollis tellus nulla non mi. Maecenas lectus
+          risus, volupat ut condimentum
+        </p>
+      </div>
+    </main>
+    <!-- Footer -->
+    <div id="FooterDiv">
+      <div class="PageInfo">
+        <div class="Com">
+          <div class="ComLogo">
+            <img src="images/logo-white.png" alt="" />
+          </div>
+          <div class="ComHead"></div>
+          <div class="ComP">
+            <p>In eleifend risus id ex tincidunt dapibus. Aenean velit risus,imperdiet non varius </p>
+          </div>
+        </div>
+        <div class="APropos">
+          <ul>
+            <label><a href="#">À propos</a></label>
+            <li><a href="#">Qui sommes nous</a></li>
+            <li><a href="#">CGU</a></li>
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Données personnelles</a></li>
+            <li><a href="#">Plan de site</a></li>
+          </ul>
+        </div>
+        <div class="commercants">
+          <ul>
+            <label><a href="#">Commerçants</a></label>
+            <li><a href="#">Boutiques</a></li>
+            <li><a href="#">Catégories</a></li>
+            <li><a href="#">Produits</a></li>
+          </ul>
+        </div>
+        <div class="Compte">
+          <ul>
+            <label><a href="#">Votre compte</a></label>
+            <li><a href="#">Livraison</a></li>
+            <li><a href="#">Commandes</a></li>
+            <li><a href="#">Informations personnelles</a></li>
+            <li><a href="#">Bons de réduction</a></li>
+          </ul>
+        </div>
+        <div class="Aide">
+          <ul>
+            <label><a href="#">Besion d'aide ?</a></label>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ComInfo">
+        <div class="ComInfoSocial">
+          <span>Copyright &copy; 2020 - Nenufea</span>
+          <span class="Facebook">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="15"
+                height="15"
+                viewBox="0 0 172 172"
+                style="fill: #000000">
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal" >
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M139.75,0h-107.5c-17.80469,0 -32.25,14.44531 -32.25,32.25v107.5c0,17.80469 14.44531,32.25 32.25,32.25h107.5c17.80469,0 32.25,-14.44531 32.25,-32.25v-107.5c0,-17.80469 -14.44531,-32.25 -32.25,-32.25zM135.38281,92.64122h-16.09916v59.56431h-26.875v-59.56431h-10.4399v-20.07872h10.4399v-12.79147c0,-16.74519 6.95132,-26.69411 26.71996,-26.69411h20.0012v20.00121h-11.6286c-7.67488,0 -8.19171,2.84254 -8.19171,8.21754l-0.02584,11.26683h18.29567z"></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </span>
+          <span class="Insta">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="15"
+                height="15"
+                viewBox="0 0 172 172"
+                style="fill: #000000">
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M49.92548,0c-27.49519,0 -49.92548,22.43029 -49.92548,49.92548v72.14904c0,27.49519 22.43029,49.92548 49.92548,49.92548h72.14904c27.49519,0 49.92548,-22.43029 49.92548,-49.92548v-72.14904c0,-27.49519 -22.43029,-49.92548 -49.92548,-49.92548zM49.92548,13.23077h72.14904c20.33714,0 36.69471,16.33173 36.69471,36.69471v72.14904c0,20.33714 -16.33173,36.69471 -36.69471,36.69471h-72.14904c-20.33714,0 -36.69471,-16.33173 -36.69471,-36.69471v-72.14904c0,-20.33714 16.33173,-36.69471 36.69471,-36.69471zM135.61538,26.46154c-5.47837,0 -9.92308,4.44471 -9.92308,9.92308c0,5.47837 4.44471,9.92308 9.92308,9.92308c5.47837,0 9.92308,-4.44471 9.92308,-9.92308c0,-5.47837 -4.44471,-9.92308 -9.92308,-9.92308zM86,39.69231c-25.50541,0 -46.30769,20.80228 -46.30769,46.30769c0,25.50541 20.80228,46.30769 46.30769,46.30769c25.50541,0 46.30769,-20.80228 46.30769,-46.30769c0,-25.50541 -20.80228,-46.30769 -46.30769,-46.30769zM86,52.92308c18.34736,0 33.07692,14.72957 33.07692,33.07692c0,18.34736 -14.72956,33.07692 -33.07692,33.07692c-18.34735,0 -33.07692,-14.72956 -33.07692,-33.07692c0,-18.34735 14.72957,-33.07692 33.07692,-33.07692z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </span>
+          <span class="Twitter">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="15"
+                height="15"
+                viewBox="0 0 172 172"
+                style="fill: #000000">
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M171.04387,36.8756c-6.22776,2.76503 -12.92067,4.6256 -19.94952,5.47837c7.15805,-4.31551 12.6881,-11.11178 15.27224,-19.22596c-6.71875,3.97956 -14.16106,6.87379 -22.06851,8.42428c-6.33113,-6.74459 -15.34976,-10.95673 -25.35036,-10.95673c-19.17428,0 -34.73077,15.55649 -34.73077,34.73077c0,2.71335 0.3101,5.375 0.90445,7.90746c-28.86479,-1.44712 -54.44772,-15.29808 -71.58053,-36.30709c-2.9976,5.14242 -4.70312,11.11178 -4.70312,17.49459c0,12.04206 6.1244,22.66286 15.45312,28.89062c-5.71094,-0.18088 -11.0601,-1.73137 -15.73738,-4.34135c0,0.15505 0,0.28426 0,0.43931c0,16.82271 11.96454,30.85456 27.85697,34.05889c-2.92007,0.80108 -5.96935,1.21454 -9.14783,1.21454c-2.2482,0 -4.41887,-0.20673 -6.53786,-0.62019c4.41887,13.77344 17.23617,23.85156 32.43088,24.10997c-11.86117,9.32872 -26.84915,14.85878 -43.12921,14.85878c-2.81671,0 -5.55589,-0.15505 -8.26923,-0.46515c15.34976,9.84556 33.61959,15.58233 53.23317,15.58233c63.87981,0 98.81731,-52.92308 98.81731,-98.79147c0,-1.52463 -0.02584,-3.02344 -0.10337,-4.52223c6.79628,-4.85817 12.6881,-10.98258 17.33954,-17.95974"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </span>
+          <span class="Youtube">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="15"
+                height="15"
+                viewBox="0 0 172 172"
+                style="fill: #000000">
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M41.75962,0.20673l11.78365,38.65865v25.22115h9.92308v-26.46154l11.37019,-37.41827h-9.92308l-6.20192,25.42788h-0.62019l-6.40865,-25.42788zM87.44712,15.71154c-3.97956,0 -7.15805,1.13702 -9.50962,3.30769c-2.35156,2.14483 -3.51442,5.03906 -3.51442,8.68269v24.39423c0,4.00541 1.21454,7.36478 3.51442,9.71635c2.32572,2.3774 5.24579,3.51442 9.09615,3.51442c3.97957,0 7.23558,-1.21454 9.50962,-3.51442c2.27404,-2.29988 3.30769,-5.47837 3.30769,-9.50962v-24.39423c0,-3.59195 -1.1887,-6.40865 -3.51442,-8.68269c-2.29988,-2.29988 -5.24579,-3.51442 -8.88942,-3.51442zM107.29327,16.95192v39.48558c0,2.81671 0.62019,4.80649 1.65385,6.20192c1.03365,1.39544 2.53246,2.06731 4.54808,2.06731c1.62801,0 3.23017,-0.46514 4.96154,-1.44712c1.75721,-1.00781 3.56611,-2.42908 5.16827,-4.34135v5.16827h8.68269v-47.13462h-8.68269v35.76442c-0.82692,1.00781 -1.70553,1.83474 -2.6875,2.48077c-0.98197,0.67188 -1.83474,1.03365 -2.48077,1.03365c-0.80108,0 -1.49879,-0.12921 -1.86058,-0.62019c-0.38762,-0.49099 -0.41346,-1.39543 -0.41346,-2.48077v-36.17788zM87.03365,23.98077c1.16286,0 2.19651,0.20673 2.89423,0.82692c0.72356,0.64603 1.03365,1.47296 1.03365,2.48077v25.84135c0,1.26622 -0.33594,2.19651 -1.03365,2.89423c-0.69772,0.72356 -1.70553,1.03365 -2.89423,1.03365c-1.16286,0 -2.06731,-0.33594 -2.6875,-1.03365c-0.64603,-0.69772 -0.82692,-1.60216 -0.82692,-2.89423v-25.84135c0,-1.00781 0.36178,-1.83474 1.03365,-2.48077c0.67188,-0.62019 1.42128,-0.82692 2.48077,-0.82692zM86,73.80288c-17.15865,-0.02584 -33.98137,0.12921 -50.44231,0.82692c-11.4994,0 -20.87981,9.27704 -20.87981,20.67308c-0.69772,9.01863 -1.05949,18.0631 -1.03365,27.08173c-0.02584,9.01863 0.33594,18.0631 1.03365,27.08173c0,11.39603 9.38041,20.67308 20.87981,20.67308c16.46094,0.67188 33.28365,0.85276 50.44231,0.82692c17.18449,0.05169 34.00721,-0.15504 50.44231,-0.82692c11.4994,0 20.87981,-9.27704 20.87981,-20.67308c0.69772,-9.01863 1.05949,-18.0631 1.03365,-27.08173c0.05169,-9.01863 -0.33594,-18.0631 -1.03365,-27.08173c0,-11.39603 -9.38041,-20.67308 -20.87981,-20.67308c-16.4351,-0.69772 -33.25781,-0.85276 -50.44231,-0.82692zM24.80769,88.48077h30.38942c0.54267,0 1.03365,0.49099 1.03365,1.03365v9.30288c0,0.54267 -0.49099,1.03365 -1.03365,1.03365h-9.30288v53.54327c0,0.54267 -0.28426,1.03365 -0.82692,1.03365h-9.92308c-0.54267,0 -1.03365,-0.49099 -1.03365,-1.03365v-53.54327h-9.30288c-0.54267,0 -0.82692,-0.49099 -0.82692,-1.03365v-9.30288c0,-0.54267 0.28426,-1.03365 0.82692,-1.03365zM88.6875,88.48077h8.88942c0.54267,0 1.03365,0.49099 1.03365,1.03365v17.98558c0.72356,-0.67187 1.4988,-1.21454 2.27404,-1.65385c1.4988,-0.82692 3.02344,-1.24038 4.54808,-1.24038c3.10096,0 5.375,1.24038 7.02885,3.51442c1.57632,2.19651 2.48077,5.27163 2.48077,9.30288v26.25481c0,3.56611 -0.7494,6.33113 -2.27404,8.26923c-1.57632,2.01563 -3.92788,3.10096 -6.82212,3.10096c-1.83474,0 -3.46274,-0.49099 -4.96154,-1.24038c-0.80108,-0.41346 -1.55048,-0.80108 -2.27404,-1.44712v1.03365c0,0.54267 -0.49099,1.03365 -1.03365,1.03365h-8.88942c-0.54267,0 -1.03365,-0.49099 -1.03365,-1.03365v-63.87981c0,-0.54267 0.49099,-1.03365 1.03365,-1.03365zM133.75481,103.98558c4.28967,0 7.80409,1.34375 10.12981,3.92788c2.32572,2.58413 3.51442,6.25361 3.51442,10.95673v12.19712c0,0.54267 -0.49099,0.82692 -1.03365,0.82692h-15.71154v8.0625c0,2.89423 0.3101,4.03125 0.62019,4.54808c0.25842,0.41346 0.69772,1.03365 2.06731,1.03365c1.11118,0 1.88642,-0.3101 2.27404,-0.82692c0.18089,-0.28426 0.62019,-1.31791 0.62019,-4.75481v-3.30769c0,-0.54267 0.49099,-1.03365 1.03365,-1.03365h9.09615c0.54267,0 1.03365,0.49099 1.03365,1.03365v3.51442c0,5.09074 -1.36959,8.96695 -3.72115,11.57692c-2.35156,2.63582 -5.89183,3.92788 -10.54327,3.92788c-4.21214,0 -7.49399,-1.31791 -9.92308,-4.13462c-2.40324,-2.76503 -3.72115,-6.58954 -3.72115,-11.37019v-21.29327c0,-4.34135 1.26622,-7.77824 3.92788,-10.54327c2.66166,-2.76503 6.15024,-4.34135 10.33654,-4.34135zM55.19712,105.22596h8.68269c0.54267,0 1.03365,0.49099 1.03365,1.03365v36.17788c0,1.18871 0.07753,1.67969 0.20673,1.86058c0.05169,0.07753 0.28426,0.41346 1.03365,0.41346c0.25842,0 0.82692,-0.10337 1.86058,-0.82692c0.85276,-0.56851 1.60217,-1.26622 2.27404,-2.06731v-35.55769c0,-0.54267 0.49099,-1.03365 1.03365,-1.03365h8.88942c0.54267,0 0.82692,0.49099 0.82692,1.03365v47.13462c0,0.54267 -0.28426,1.03365 -0.82692,1.03365h-8.88942c-0.54267,0 -1.03365,-0.49099 -1.03365,-1.03365v-2.6875c-1.16286,1.13702 -2.29988,1.98978 -3.51442,2.6875c-1.91226,1.08534 -3.72115,1.65385 -5.58173,1.65385c-2.35156,0 -4.16046,-0.80108 -5.375,-2.48077c-1.16286,-1.57632 -1.65385,-3.82452 -1.65385,-6.82212v-39.48558c0,-0.54267 0.49099,-1.03365 1.03365,-1.03365zM100.88462,114.11538c-0.33594,0.05169 -0.67187,0.23257 -1.03365,0.41346c-0.41346,0.20673 -0.82692,0.59435 -1.24038,1.03365v28.52885c0.51683,0.54267 0.95613,1.00781 1.44712,1.24038c0.54267,0.25842 1.05949,0.41346 1.65385,0.41346c1.11118,0 1.55048,-0.46514 1.65385,-0.62019c0.25842,-0.33594 0.41346,-1.11118 0.41346,-2.6875v-24.39423c0,-1.34375 -0.12921,-2.45493 -0.62019,-3.10096c-0.49099,-0.64603 -1.26622,-1.00781 -2.27404,-0.82692zM133.54808,114.32212c-1.05949,0 -1.83474,0.23257 -2.27404,0.82692c-0.3101,0.4393 -0.62019,1.52464 -0.62019,3.72115v3.72115h5.58173v-3.72115c0,-2.17067 -0.28426,-3.23017 -0.62019,-3.72115c-0.41346,-0.56851 -1.05949,-0.82692 -2.06731,-0.82692z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </span>
+        </div>
+        <div class="ComInfoPaiment">
+          <span class="MasterCard">
+            <a href="#"> <img src="images/mastercard.png" alt="" /> </a>
+          </span>
+          <span class="Paypal">
+            <a href="#"> <img src="images/paypal.png" alt="" /></a>
+          </span>
+          <span class="VisaCard">
+            <a href="#"> <img src="images/visa.png" alt="" /> </a>
+          </span>
+        </div>
+        <div class="ComInfoEgio">
+          <span class="Egio">
+            <a href="https://www.egiodigital.com/">
+              <img class="logo lazyloaded" src="images/egio.png" alt="Agence web offshore au Maroc - Egio Digital Ecommerce" data-ll-status="loaded" />
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
