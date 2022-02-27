@@ -783,18 +783,18 @@ body
     }
     #ItemDetails
     {
-        grid-template-columns: repeat(4,1fr);
-        grid-gap: 5px;
-        margin-top: 10px;
+        grid-gap: 0;
+        margin: 5px;
     }
     #ItemDetails .ImgGallery
     {
-        justify-self: center;
+        height: 150px;
+        justify-self: start;
     }
     #ItemDetails .ImgGallery .ImageShowed
     {
         height: 200px;
-        width: 200px;
+        width: 150px;
     }
     #ItemDetails .ImgGallery .Gallery
     {
@@ -804,6 +804,7 @@ body
     #ItemDetails .ImgGallery .GallerySilde
     {
         height: 100px;
+        width: 162px;
     }
     #ItemDetails .ImgGallery .GallerySilde #RightArrow 
     {
@@ -815,7 +816,6 @@ body
         height: 50px;
         width: 50px;
     }
-
     #ItemDetails .ImageShowed
     {
         height: 50%;
@@ -826,11 +826,9 @@ body
         height: 20%;
         width: 80%;
     }
-
-    
     #ItemDetails .ItemDetail{
         padding: 15px;
-        grid-column: 3/5;
+        grid-column: 2/5;
     }
     #ItemDetails .ItemDetail h3:first-of-type{
         margin-top: 15px;
@@ -841,14 +839,10 @@ body
     #ItemDetails .ItemDetail .ItemDetailTags span{
         padding: 3px;
         font-size: 10px;
-        border: 1px rgb(245, 245, 245) solid;
-        background-color: rgb(245, 245, 245);
     }
     #ItemDetails .ItemDetail .ItemDetailPrice,
     #ItemDetails .ItemDetail .ItemDetailPrice div{
-        margin: 15px 15px 5px 0;
-        display: flex;
-        align-items:baseline;
+        margin: 5px 5px 2px 0;
     }
     #ItemDetails .ItemDetail .ItemDetailPrice h3{
         color: #000000;
@@ -860,10 +854,10 @@ body
     }
     #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice,
     #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h3{
-        font-size: 25px;    
+        font-size: 15px;    
     }
     #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h4{
-        font-size: 20px;    
+        font-size: 10px;    
     }
     #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice{
         margin-left: 40px;
@@ -875,13 +869,11 @@ body
         text-decoration: line-through ;
         
     }
-    #ItemDetails .ItemDetail .ItemDetailPrice .Discount{
-        color: #ffffff;
-        padding: 3px 7px;
-        font-size: 13px;
-        border: 1px #204546 solid;
-        border-radius: 20px;
-        background-color: #204546;
+    #ItemDetails .ItemDetail .ItemDetailPrice .Discount
+    {
+        padding: 1px 3px;
+        font-size: 8px;
+        border-radius: 10px;
     }
     #ItemDetails .ItemDetail .OliviaHealth{
         display: flex;
@@ -889,7 +881,6 @@ body
         margin: 15px 0;
     }
     #ItemDetails .ItemDetail .OliviaHealth .OliviaHealthLogo{
-        border: 1px #336766 solid;
         border-radius: 50%;
         height: 30px;
         width: 30px;
@@ -934,10 +925,6 @@ body
         list-style: none;
         padding: 3px;
         margin: 3px;
-        border: 1px rgb(163, 163, 163) solid;
-    }
-    #ItemDetails .ItemDetail .Origine .OrigineSelected{
-        border: 2px #44b39b solid;
     }
     #ItemDetails .ItemDetail .ProductCommand .ProductQuantite{
         display: flex;
@@ -951,121 +938,131 @@ body
         font-size: inherit;
         font-weight: bold;
     }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn{
-        cursor: pointer;
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn
+    {
+
         margin-left: 15px;
         padding: 10px;
         font-size: 20px;
         font-weight: 500;
-        color: #ffffff;
-        border: 1px #44b39b solid;
         border-radius: 25px;
         width: 200px;
-        background-color: #44b39b;
-        transition-duration: 0.5s;
-    }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn:hover{
-        transform: scale(1.03);
+
     }
     #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite{
-        cursor: pointer;
         margin-left: 15px;
-        border: 1px #cacaca solid;
         border-radius: 50%;
         height: 30px;
         width: 30px;
-        background-color: #ffffff;
     }
     #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite:hover{
         cursor: pointer;
         margin-left: 15px;
-        border: 1px #ff7070 solid;
         border-radius: 50%;
         height: 30px;
         width: 30px;
-        background-color: #ff7070;
     }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite svg{
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite svg
+    {
         margin: 5px 3px;
     }
-    #ItemDetails .ItemDetail #TelechargerDetails{
-        cursor: pointer;
+    #ItemDetails .ItemDetail #TelechargerDetails
+    {
         padding: 5px;
-        font-size: 15px;
-        border: 1px #44b39b solid;
+        font-size: 8px;
         border-radius: 20px;
-        width: 300px;
-        background-color: #ffffff;
-        transition-duration: 0.5s;
+        width: 150px;
     }
     #ItemDetails .ItemDetail #TelechargerDetails:hover{
         transform: scale(1.03);
     }
     /* Item Presentation END */
     /* Item Description */
-    #ItemDescription{
-        margin: 20px;
-        width: 85%;
+    #ItemDescription
+    {
+        margin: 10px;
+        width: 350px;
     }
-    #ItemDescription .ItemDescriptionItems{
-        border-bottom: 1px rgb(233, 233, 233) solid;
-        width: auto;
-    
+    #ItemDescription .ItemDescriptionItems ul li
+    {
+        padding: 5px;
     }
-    #ItemDescription .ItemDescriptionItems ul{
-        display: flex;
-        justify-content: baseline;
-        height: 40px;
+    #ItemDescription .ItemDescriptionDes
+    {
+        margin: 5px;
     }
-    #ItemDescription .ItemDescriptionItems ul li{
-        list-style: none;
-        padding: 10px 20px;
+    #ItemDetails .ItemDetail 
+    {
+        padding: 5px;
+        height: 25%;
+        width: 200px;
+    } 
+    /* Item Description END */
+    /* Recommendation Items */ 
+    #Recommendation
+    {
+        margin: 12px 0;
+        width: 390px; 
     }
-    #ItemDescription .ItemDescriptionItems ul li:hover{
-        border-bottom: 5px #44b39b solid;
-        cursor: pointer;
+    #Recommendation h1
+    {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 50;
+        grid-column: 1/5;
     }
-    .SelectedItem{
-        border-bottom: 5px #44b39b solid;
+    .Recommendation
+    {
+        margin: 5px;
+        grid-gap: 5px;
+        grid-auto-rows: minmax(20px, auto);
+        width: 360px;
     }
-    #ItemDescription .ItemDescriptionDes{
+    .heartp
+    {
+        position:absolute;
+        float: right;
+        margin-right: 20px;
+    }
+    .imgproduit
+    {
+        margin-right: 95px;
+        width: 75px;
+        height: 50px;
+
+    }
+    .Recommendation .RecProduct{
+        height: auto;
+        width: 75px;
+    }
+    .imgrecom
+    {
+        width: 75px;
+        height: 50px;
+    }
+    .Recommendation .RecProduct .RecProductDes{
         margin: 10px;
     }
-    #ItemDetails 
-    {
-        grid-gap: 0;
-        margin-top: 5px;
-        padding: auto;
+    .Recommendation .RecProduct .RecProductDes h3,
+    .Recommendation .RecProduct .RecProductDes h5,
+    .Recommendation .RecProduct .RecProductDes h6{
+        font-weight: 60;
+        font-size: 11px;
     }
-    #ItemDetails .ItemDetail 
-    {
-        padding: 5px;
-        height: 100px;
-        width: auto;
+    .Recommendation .RecProduct .RecProductDes .RecProductPrice{
+        margin: 15px 0;
+        display: flex;
+        align-items: baseline;
     }
-    #ItemDetails .ImgGallery 
-    {
-        justify-self: start;
+    .Recommendation .RecProduct .RecProductDes .RecProductPrice h4{
+        margin-right: 3px;
+        font-size: 12px;
     }
-    #ItemDetails .ImgGallery .ImageShowed {
-        height: 200px;
-        width: 150px;
-    }
-
-    #ItemDetails .ImgGallery .GallerySilde 
-    {
-        width: 200px;
-    }
-    #ItemDetails .ItemDetail 
-    {
-        padding: 5px;
-        height: 50%;
-        width: 200px;
-    }  
-    #ItemDetails .ItemDetail .ItemDetailPrice .Discount{
-        
-        padding: 1px 3px;
+    .Recommendation .RecProduct .RecProductDes .RecProductTags span{
+        padding: 6px;
         font-size: 8px;
-        border-radius: 10px;
+        margin: 3px;
     }
+    /* Recommendation Items END */
+    /* Service Description */
 }
