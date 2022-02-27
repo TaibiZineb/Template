@@ -593,7 +593,8 @@ body
     border: 1px #336766 solid;
     background-color: #336766;
 }
-#FooterDiv .PageInfo{
+#FooterDiv .PageInfo
+{
     margin: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -694,7 +695,7 @@ body
     {
         font-size: 5px;
         width: 150px;
-        margin-top: 2px;
+        margin-top: 1px;
         margin-left: 2px;
         align-content: center;
 
@@ -981,7 +982,7 @@ body
     #ItemDescription
     {
         margin: 10px;
-        width: 350px;
+        width: 100%;
     }
     #ItemDescription .ItemDescriptionItems ul li
     {
@@ -1002,7 +1003,7 @@ body
     #Recommendation
     {
         margin: 12px 0;
-        width: 390px; 
+        width: 100%; 
     }
     #Recommendation h1
     {
@@ -1016,7 +1017,7 @@ body
         margin: 5px;
         grid-gap: 5px;
         grid-auto-rows: minmax(20px, auto);
-        width: 360px;
+        width: 100%;
     }
     .heartp
     {
@@ -1027,18 +1028,18 @@ body
     .imgproduit
     {
         margin-right: 95px;
-        width: 75px;
-        height: 50px;
+        width: 120px;
+        height: 85px;
 
     }
     .Recommendation .RecProduct{
         height: auto;
-        width: 75px;
+        width: 120px;
     }
     .imgrecom
     {
-        width: 75px;
-        height: 50px;
+        width: 120px;
+        height: 85px;
     }
     .Recommendation .RecProduct .RecProductDes{
         margin: 10px;
@@ -1065,4 +1066,121 @@ body
     }
     /* Recommendation Items END */
     /* Service Description */
+    #ServiceDescription
+    {
+        padding: 5px;
+        gap: 5px;
+        grid-auto-rows: minmax(20px, auto);
+        width: 100%; 
+    }
+    #ServiceDescription .ServiceDescriptionImg
+    {
+        height: 15px;
+        width: 15px; 
+    }
+    #ServiceDescription .ServiceDescriptionImg svg
+    {
+        padding-top: 2px;
+    }
+    #ServiceDescription .ServiceDescriptionHead h4{
+        font-weight: 100;
+        font-size: 12px;
+    }
+    #ServiceDescription .ServiceDescriptionP{
+        font-size: 9px;
+    }
+    /* Service Description END */
+    /* Email Abonnement */
+    #EmailAbonnement
+    {
+        width: 100%; 
+    }
+    #EmailAbonnement .Newsletter p
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    #EmailAbonnement .SentEmailForm{
+        margin: 30px 0px;
+        right: 50px;
+    }
+    #EmailAbonnement .SentEmailForm div:first-of-type{
+        margin-left: 5px;
+        display: flex;
+    }
+    #EmailAbonnement .SentEmailForm .TextInput{
+        padding-left: 20px;
+        height: 35px;
+        width: 175px;
+        border-radius: 20px;
+    }
+    #EmailAbonnement .SentEmailForm #SentButton{
+        margin-left: 10px;
+        border-radius: 50%;
+        background-color: #336766;
+        height: 35px;
+        width: 35px; 
+    }
+    #EmailAbonnement .SentEmailForm .CheckboxP p{
+        font-size: 8px;
+        width: 80%;
+    }
+    /* Email Abonnement END */
+    /* Footer */
+    #FooterDiv{
+        width: 100%;
+    }
+    #FooterDiv .PageInfo
+    {
+        margin: 20px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        grid-auto-rows: minmax(20px, auto);
+    }
+    #FooterDiv .PageInfo div
+    {
+        margin: 2px;
+    }
+
+    #FooterDiv .PageInfo ul li{
+        padding: 2px 0;
+        font-size: 10px;
+    }
+
+    #FooterDiv .PageInfo ul label
+    {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    #FooterDiv .PageInfo .Com #ComLogoimg
+    {
+        width: 110px;
+        height: 120px;
+    }
+    #FooterDiv .PageInfo .Com .ComP
+    {
+        font-size: 11px;
+    }
+
+    #FooterDiv .ComInfo{
+        margin-top: -10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        z-index: 1000;
+    }
+
+    #FooterDiv .ComInfo div{
+        width: 400px;
+        font-size: 10px;
+    }
+
+    #FooterDiv .ComInfo .ComInfoSocial span{
+        margin: 2px;
+    }
+
+    #FooterDiv .ComInfo .ComInfoSocial .Facebook{
+        margin-left: 20px;
+    }
+    /* Footer END*/
 }
