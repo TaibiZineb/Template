@@ -511,7 +511,8 @@ body
 #ServiceDescription .ServiceDescriptionImg svg{
     padding-top: 5px;
 }
-#ServiceDescription .ServiceDescriptionHead h4{
+#ServiceDescription .ServiceDescriptionHead h4
+{
     font-weight: 100;
     font-size: 17px;
 }
@@ -815,6 +816,30 @@ body
         height: 150px;
         max-width: 100%;
     }
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite #Quantite 
+    {
+        height: 25px;
+        width: 55px;
+    }
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn 
+    {
+        margin-left: 9px;
+        padding: 7px;
+        font-size: 16px;
+        width: 174px;
+    }
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite
+    {
+        margin-left: 6px;
+    }
+    #ItemDetails .ItemDetail #TelechargerDetails 
+    {
+        padding: 2px;
+        font-size: 13px;
+        border-radius: 20px;
+        width: 285px;
+    }
+    
     #ItemDetails .ImgGallery .GallerySilde
     {
         height: 100px;
@@ -859,8 +884,15 @@ body
     {
         font-size: small;
     }
-    /* Item Presentation END */
-    /* Recommendation Items */ 
+    #ItemDescription .ItemDescriptionItems 
+    {
+        font-size: smaller;
+    }
+    #ItemDescription .ItemDescriptionDes
+    {
+        margin: 10px;
+        font-size: 11px;
+    }
     #Recommendation
     {
         margin: 12px 0;
@@ -873,9 +905,9 @@ body
     }
     .Recommendation
     {
-        display:contents;
-        padding: 5px;
-        margin-left: 10px;
+        display:block;
+        padding: 10px;
+        margin: 10px;
     }
     .heartp
     {
@@ -890,47 +922,36 @@ body
     .Recommendation .RecProduct
     {
         height: auto;
-        width: 100%;
+        width: 80%;
+        padding: 5px;
+        margin: 10px;
+    }
+    .RecProductImg
+    {
+        align-content: center;
     }
     .imgrecom
     {
         height: 85px;
+        width: auto;
     }
     .Recommendation .RecProduct .RecProductDes
     {
         margin: 10px;
     }
-    .Recommendation .RecProduct .RecProductDes h3,
-    .Recommendation .RecProduct .RecProductDes h5,
-    .Recommendation .RecProduct .RecProductDes h6
-    {
-        font-weight: 60;
-        font-size: 11px;
-    }
     .Recommendation .RecProduct .RecProductDes .RecProductPrice
     {
         margin: 15px 0;
-    }
-    .Recommendation .RecProduct .RecProductDes .RecProductPrice h4
-    {
-        margin-right: 3px;
-        font-size: 12px;
-    }
-    .Recommendation .RecProduct .RecProductDes .RecProductTags span
-    {
-        padding: 6px;
-        font-size: 8px;
-        margin: 3px;
     }
     /* Recommendation Items END */
     /* Service Description */
     #ServiceDescription
     {
-        padding: 5px;
-        gap: 5px;
-        grid-auto-rows: minmax(20px, auto);
         width: 100%;
         display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 0px;
     }
     #ServiceDescription .ServiceDescriptionImg
     {
@@ -941,6 +962,15 @@ body
     {
         padding-top: 2px;
     }
+    #ServiceDescription .ServiceDescriptionHead h4
+    {
+        font-size: 12px;
+    }
+    #ServiceDescription .ServiceDescriptionP 
+    {
+
+        font-size: 8px;
+    }
 
     /* Service Description END */
     /* Email Abonnement */
@@ -950,12 +980,28 @@ body
     }
     #EmailAbonnement .Newsletter p
     {
-        font-size: 15px;
+        font-size: 12px;
     }
     #EmailAbonnement .SentEmailForm
     {
         margin: 30px 0px;
         right: 50px;
+    }
+    #EmailAbonnement .SentEmailForm .TextInput 
+    {
+        height: auto;
+        width: auto;
+    }
+    #EmailAbonnement .SentEmailForm #SentButton 
+    {
+        height: 25px;
+        width: 32px;
+    }
+    #EmailAbonnement .SentEmailForm #SentButton svg
+    {
+        height: 20px;
+        width: 30px;
+        padding: 1px;
     }
     #EmailAbonnement .SentEmailForm div:first-of-type
     {
@@ -970,26 +1016,20 @@ body
     }
     /* Email Abonnement END */
     /* Presentation Paraghraph */
-    #PresentationParagraph
-    {
-        width: 100%;
-    }
     #PresentationParagraph p
     {
         margin: 30px;
         width: 80%;
+        font-size: 12px;
     }
     /* Presentation Paraghraph END */
     /* Footer */
-    #FooterDiv
-    {
-        width: 515px;
-    }
     #FooterDiv .PageInfo
     {
-        margin: 20px;
-        grid-template-columns: repeat(5, 1fr);
-        grid-auto-rows: minmax(20px, auto);
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
     }
     #FooterDiv .PageInfo div
     {
@@ -1017,28 +1057,54 @@ body
         font-size: 11px;
     }
 
-    #FooterDiv .ComInfo
+    #FooterDiv .PageInfo .APropos,
+    #FooterDiv .PageInfo .commercants,
+    #FooterDiv .PageInfo .Compte,
+    #FooterDiv .PageInfo .Aide
+
     {
-        margin-top: -10px;
-        margin-bottom: 10px;
-        margin-left: 30px;
-        z-index: 1000;
+        text-align: center;
     }
 
     #FooterDiv .ComInfo div
     {
-        width: 400px;
-        font-size: 10px;
+        width: 80%;
+        font-size: 8px;
+    }
+    #FooterDiv .ComInfo
+    {
+        display: flex;
+        margin-left: 10px;
+        margin-top: 0px;
     }
 
     #FooterDiv .ComInfo .ComInfoSocial span
     {
-        margin: 2px;
+        margin: 0px;
     }
 
     #FooterDiv .ComInfo .ComInfoSocial .Facebook
     {
-        margin-left: 20px;
+        margin-left: 3px;
+    }
+    .ComInfoPaiment .MasterCard #MasterCard
+    {
+        height: 15px;
+        width: 15px;
+    }
+    .ComInfoPaiment .Paypal #Paypal
+    {
+        height: 15px;
+        width: 15px;
+    }
+    .ComInfoPaiment .VisaCard #VisaCard
+    {
+        height: 15px;
+        width: 15px;
+    }
+    .ComInfoEgio .Egio .lazyloaded
+    {
+        width: 45px;
     }
     /* Footer END*/
 }
