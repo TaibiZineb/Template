@@ -670,6 +670,7 @@ body
     #MessageDiv
     {
         height: 10px;
+        width:100%;
     }
     #MessageDiv p 
     {
@@ -677,13 +678,14 @@ body
     }
     #MessageDiv span 
     {
-        font-size: 5px;
+        font-size: 6px;
         top: 1px;
-        right: 5px;
+        right: 20px;
     }
     #NavBar
     {
         height: 30px;
+        width: 100%;
     }
     #NavBar #NavLogo 
     {
@@ -777,9 +779,9 @@ body
     }
     #Container
     {
-        grid-auto-rows: min-content;
-        margin-top: 5px;
-        justify-items:normal;
+        grid-auto-rows: auto;
+        margin-top: 3px;
+        justify-items: center;
     }
     #ItemDetails
     {
@@ -987,10 +989,6 @@ body
     {
         padding: 5px;
     }
-    #ItemDescription .ItemDescriptionDes
-    {
-        margin: 5px;
-    }
     #ItemDetails .ItemDetail 
     {
         padding: 5px;
@@ -1080,6 +1078,7 @@ body
         padding: 5px;
         gap: 5px;
         grid-auto-rows: minmax(20px, auto);
+        width: 100%;
     }
     #ServiceDescription .ServiceDescriptionImg
     {
@@ -1119,7 +1118,6 @@ body
     #EmailAbonnement .SentEmailForm div:first-of-type
     {
         margin-left: 5px;
-        display: flex;
     }
     #EmailAbonnement .SentEmailForm .TextInput
     {
@@ -1131,8 +1129,6 @@ body
     #EmailAbonnement .SentEmailForm #SentButton
     {
         margin-left: 10px;
-        border-radius: 50%;
-        background-color: #336766;
         height: 35px;
         width: 35px; 
     }
@@ -1142,9 +1138,20 @@ body
         width: 80%;
     }
     /* Email Abonnement END */
+    /* Presentation Paraghraph */
+    #PresentationParagraph
+    {
+        width: 100%;
+    }
+    #PresentationParagraph p{
+        margin: 30px;
+        text-align: center;
+        width: 80%;
+    }
+/* Presentation Paraghraph END */
     /* Footer */
     #FooterDiv{
-        width: 100%;
+        width: 515px;
     }
     #FooterDiv .PageInfo
     {
