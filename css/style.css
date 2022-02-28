@@ -32,6 +32,10 @@ body
     right: 15px;
     font-size: 15px;
 }
+#MessageDiv span #msgdivimg
+{
+    height: 13px;
+}
 /* Alert Message Div END */
 /* Navigation Bar */
 #NavBar
@@ -669,18 +673,21 @@ body
 {
     #MessageDiv
     {
-        height: 10px;
+        height: 12px;
         width:100%;
     }
     #MessageDiv p 
     {
-        font-size: 5px;
+        font-size: 6px;
     }
     #MessageDiv span 
     {
-        font-size: 6px;
-        top: 1px;
-        right: 20px;
+        font-size: 7px;
+        top: 5px;
+    }
+    #MessageDiv span #msgdivimg
+    {
+        height: 10px;
     }
     #NavBar
     {
