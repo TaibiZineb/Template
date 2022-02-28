@@ -997,9 +997,9 @@ body
     }
     #EmailAbonnement .SentEmailForm #SentButton svg
     {
-        height: 20px;
-        width: 30px;
-        padding: 1px;
+        height: 21px;
+        width: 24px;
+        padding: 2px;
     }
     #EmailAbonnement .SentEmailForm div:first-of-type
     {
