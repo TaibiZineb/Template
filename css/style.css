@@ -792,10 +792,10 @@ body
     }
     #ItemDetails
     {
-        
+
         display:block;
         grid-gap: 0;
-        margin: 5px;
+        margin: 5px 16px;
     }
     #ItemDetails .ImgGallery
     {
@@ -888,7 +888,6 @@ body
     }
     #ItemDescription .ItemDescriptionDes
     {
-        margin: 10px;
         font-size: 11px;
     }
     #Recommendation
@@ -917,12 +916,14 @@ body
         width: 98%;
         height: 95px;
     }
+    .RecProduct{
+        margin: 0 auto;
+    }
     .Recommendation .RecProduct
     {
         height: auto;
         width: 80%;
         padding: 5px;
-        margin: 10px;
     }
     .RecProductImg
     {
@@ -997,9 +998,9 @@ body
     }
     #EmailAbonnement .SentEmailForm #SentButton svg
     {
-        height: 21px;
-        width: 24px;
-        padding: 2px;
+        height: 20px;
+        width: 30px;
+        padding: 1px;
     }
     #EmailAbonnement .SentEmailForm div:first-of-type
     {
