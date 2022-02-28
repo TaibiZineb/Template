@@ -674,7 +674,6 @@ body
     #MessageDiv
     {
         height: 12px;
-        width:100%;
     }
     #MessageDiv p 
     {
@@ -792,31 +791,32 @@ body
     }
     #ItemDetails
     {
+        
+        display:block;
         grid-gap: 0;
         margin: 5px;
     }
     #ItemDetails .ImgGallery
     {
-        height: 150px;
         justify-self: start;
         margin: 0;
+        grid-column:none;
     }
     #ItemDetails .ImgGallery .ImageShowed
     {
-        height: 150px;
-        width: 150px;
+        height: 100%;
+        width: 80%;
         margin: 0;
     }
     #ItemDetails .ImgGallery .Gallery
     {
         height: 150px;
-        max-width: 200px;
-        /*flex-wrap: wrap;*/
+        max-width: 100%;
     }
     #ItemDetails .ImgGallery .GallerySilde
     {
         height: 100px;
-        width: 162px;
+        width: 90%;
         margin: 0;
     }
     #ItemDetails .ImgGallery .GallerySilde #RightArrow 
@@ -825,7 +825,7 @@ body
     }
     #ItemDetails .ImgGallery .Gallery .GalleryImg
     {
-        margin-left: 5px;
+        margin-left: 10px;
         height: 50px;
         width: 50px;
     }
@@ -842,8 +842,7 @@ body
     #ItemDetails .ItemDetail 
     {
         padding: 5px;
-        height: 25%;
-        width: 200px;
+        width: 100%;
     } 
     #ItemDetails .ItemDetail h3:first-of-type
     {
@@ -851,161 +850,20 @@ body
     }
     #ItemDetails .ItemDetail .ItemDetailTags
     {
-        margin: 2px 0;
-    }
-    #ItemDetails .ItemDetail .ItemDetailTags span
-    {
-        padding: 2px;
-        font-size: 8px;
-    }
-    #ItemDetails .ItemDetail .ItemDetailPrice,
-    #ItemDetails .ItemDetail .ItemDetailPrice div
-    {
-        margin: 2px 2px 2px 0;
-    }
-    #ItemDetails .ItemDetail .ItemDetailPrice h4
-    {
-        margin-right: 2px;
-    }
-    #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice,
-    #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h3
-    {
-        font-size: 11px;    
-    }
-    #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h4
-    {
-        font-size: 9px;    
-    }
-    #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice
-    {
-        margin-left: 40px;
-    }
-    #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice,
-    #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice h3
-    {
-        font-size: 11px;   
-    }
-    #ItemDetails .ItemDetail .ItemDetailPrice .Discount
-    {
-        padding: 1px 3px;
-        font-size: 8px;
-        border-radius: 10px;
-    }
-    #ItemDetails .ItemDetail .OliviaHealth
-    {
-        margin: 5px 0;
-    }
-    #ItemDetails .ItemDetail .OliviaHealth .OliviaHealthLogo
-    {
-        height: 15px;
-        width: 15px;
-    }
-    .fa-feather
-    {
-        top:12%;
-        left:12%;
-    }
-    #ItemDetails .ItemDetail .OliviaHealth .OliviaHealthTitle
-    {
-        margin-left: 3px;
-    }
-    #ItemDetails .ItemDetail .BaseHuile ul
-    {
-        margin: 5px 0;
-        font-size: 8px;
-    }
-    #ItemDetails .ItemDetail .BaseHuile li
-    {
-        padding: 2px;
-        margin: 2px;
-    }
-    #ItemDetails .ItemDetail .Origine ul
-    {
-        margin: 5px 0;
-        font-size: 8px;
-    }
-    #ItemDetails .ItemDetail .Origine li
-    {
-        padding: 2px;
-        margin: 2px;
-    }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite
-    {
-        margin: 12px 0;
-    }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite #Quantite
-    {
-        height: 10px;
-        width: 30px;
-        font-size: 9px;
-    }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn
-    {
-        margin-left: 5px;
-        padding: 5px;
-        font-size: 10px;
-        font-weight: 500;
-        border-radius: 25px;
-        width: 100px;
-    }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite{
-        margin-left: 5px;
-        border-radius: 50%;
-        height: 10px;
-        width: 10px;
-    }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite:hover{
-        cursor: pointer;
-        margin-left: 15px;
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
-    }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite svg
-    {
-        margin: 1px 1px;
-        height: 12px;
-        width: 12px;
-    }
-    #ItemDetails .ItemDetail #TelechargerDetails
-    {
-        padding: 3px;
-        font-size: 8px;
-        border-radius: 20px;
-        width: 120px;
-    }
-    #ItemDetails .ItemDetail #TelechargerDetails:hover{
-        transform: scale(1.03);
+        margin: 0;
+        width: 80%;
     }
     /* Item Presentation END */
-    /* Item Description */
-    #ItemDescription
-    {
-        margin: 10px;
-        width: 100%;
-    }
-    #ItemDescription .ItemDescriptionItems ul li
-    {
-        padding: 5px;
-    }
-  
-    #ItemDescription
-    {
-        font-size: 12px;
-    }
-    /* Item Description END */
     /* Recommendation Items */ 
     #Recommendation
     {
         margin: 12px 0;
-        width: 100%; 
     }
     #Recommendation h1
     {
         margin-bottom: 20px;
         font-size: 20px;
         font-weight: 50;
-        grid-column: 1/5;
     }
     .Recommendation
     {
@@ -1016,8 +874,6 @@ body
     }
     .heartp
     {
-        position:absolute;
-        float: right;
         margin-right: 20px;
     }
     .imgproduit
@@ -1025,7 +881,6 @@ body
         margin-right: 95px;
         width: 120px;
         height: 85px;
-
     }
     .Recommendation .RecProduct
     {
@@ -1051,8 +906,6 @@ body
     .Recommendation .RecProduct .RecProductDes .RecProductPrice
     {
         margin: 15px 0;
-        display: flex;
-        align-items: baseline;
     }
     .Recommendation .RecProduct .RecProductDes .RecProductPrice h4
     {
@@ -1073,6 +926,7 @@ body
         gap: 5px;
         grid-auto-rows: minmax(20px, auto);
         width: 100%;
+        display: flex;
     }
     #ServiceDescription .ServiceDescriptionImg
     {
@@ -1083,15 +937,7 @@ body
     {
         padding-top: 2px;
     }
-    #ServiceDescription .ServiceDescriptionHead h4
-    {
-        font-weight: 100;
-        font-size: 12px;
-    }
-    #ServiceDescription .ServiceDescriptionP
-    {
-        font-size: 9px;
-    }
+
     /* Service Description END */
     /* Email Abonnement */
     #EmailAbonnement
@@ -1100,9 +946,7 @@ body
     }
     #EmailAbonnement .Newsletter p
     {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 12px;
+        font-size: 15px;
     }
     #EmailAbonnement .SentEmailForm
     {
@@ -1113,19 +957,8 @@ body
     {
         margin-left: 5px;
     }
-    #EmailAbonnement .SentEmailForm .TextInput
-    {
-        padding-left: 20px;
-        height: 35px;
-        width: 175px;
-        border-radius: 20px;
-    }
-    #EmailAbonnement .SentEmailForm #SentButton
-    {
-        margin-left: 10px;
-        height: 35px;
-        width: 35px; 
-    }
+  
+    
     #EmailAbonnement .SentEmailForm .CheckboxP p
     {
         font-size: 8px;
@@ -1137,21 +970,21 @@ body
     {
         width: 100%;
     }
-    #PresentationParagraph p{
+    #PresentationParagraph p
+    {
         margin: 30px;
-        text-align: center;
         width: 80%;
     }
-/* Presentation Paraghraph END */
+    /* Presentation Paraghraph END */
     /* Footer */
-    #FooterDiv{
+    #FooterDiv
+    {
         width: 515px;
     }
     #FooterDiv .PageInfo
     {
         margin: 20px;
         grid-template-columns: repeat(5, 1fr);
-        gap: 5px;
         grid-auto-rows: minmax(20px, auto);
     }
     #FooterDiv .PageInfo div
