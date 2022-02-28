@@ -828,48 +828,49 @@ body
         height: 20%;
         width: 80%;
     }
-    #ItemDetails .ItemDetail{
-        padding: 15px;
-        grid-column: 2/5;
+    #ItemDetails .ItemDetail
+    {
+        padding: 5px;
     }
-    #ItemDetails .ItemDetail h3:first-of-type{
-        margin-top: 15px;
+    #ItemDetails .ItemDetail h3:first-of-type
+    {
+        margin-top: 5px;
     }
-    #ItemDetails .ItemDetail .ItemDetailTags{
-        margin: 15px 0;
+    #ItemDetails .ItemDetail .ItemDetailTags
+    {
+        margin: 5px 0;
     }
-    #ItemDetails .ItemDetail .ItemDetailTags span{
+    #ItemDetails .ItemDetail .ItemDetailTags span
+    {
         padding: 3px;
-        font-size: 10px;
+        font-size: 8px;
     }
     #ItemDetails .ItemDetail .ItemDetailPrice,
-    #ItemDetails .ItemDetail .ItemDetailPrice div{
+    #ItemDetails .ItemDetail .ItemDetailPrice div
+    {
         margin: 5px 5px 2px 0;
     }
-    #ItemDetails .ItemDetail .ItemDetailPrice h3{
-        color: #000000;
-        font-weight: bold;
-    }
-    #ItemDetails .ItemDetail .ItemDetailPrice h4{
-        font-weight: bold;
+    #ItemDetails .ItemDetail .ItemDetailPrice h4
+    {
         margin-right: 3px;
     }
     #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice,
-    #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h3{
-        font-size: 15px;    
+    #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h3
+    {
+        font-size: 12px;    
     }
-    #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h4{
+    #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h4
+    {
         font-size: 10px;    
     }
-    #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice{
+    #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice
+    {
         margin-left: 40px;
     }
     #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice,
-    #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice h3{
-        font-size: 15px;
-        color: #6b6b6b;
-        text-decoration: line-through ;
-        
+    #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice h3
+    {
+        font-size: 12px;   
     }
     #ItemDetails .ItemDetail .ItemDetailPrice .Discount
     {
@@ -877,85 +878,68 @@ body
         font-size: 8px;
         border-radius: 10px;
     }
-    #ItemDetails .ItemDetail .OliviaHealth{
-        display: flex;
-        align-items: center;
-        margin: 15px 0;
+    #ItemDetails .ItemDetail .OliviaHealth
+    {
+        margin: 5px 0;
     }
-    #ItemDetails .ItemDetail .OliviaHealth .OliviaHealthLogo{
-        border-radius: 50%;
-        height: 30px;
+    #ItemDetails .ItemDetail .OliviaHealth .OliviaHealthLogo
+    {
+        height: 15px;
+        width: 15px;
+    }
+    .fa-feather
+    {
+        top:12%;
+        left:12%;
+    }
+    #ItemDetails .ItemDetail .OliviaHealth .OliviaHealthTitle
+    {
+        margin-left: 3px;
+    }
+    #ItemDetails .ItemDetail .BaseHuile ul
+    {
+        margin: 5px 0;
+        font-size: 8px;
+    }
+    #ItemDetails .ItemDetail .BaseHuile li
+    {
+        padding: 2px;
+        margin: 2px;
+    }
+    #ItemDetails .ItemDetail .Origine ul
+    {
+        margin: 5px 0;
+        font-size: 8px;
+    }
+    #ItemDetails .ItemDetail .Origine li
+    {
+        padding: 2px;
+        margin: 2px;
+    }
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite
+    {
+        margin: 12px 0;
+    }
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite #Quantite
+    {
+        height: 10px;
         width: 30px;
-        position:relative;
-        background-color: #33676610;
-    }
-    .fa-feather{
-        position:absolute;
-        top:20%;
-        left:20%;
-        color: #336766;
-    }
-    #ItemDetails .ItemDetail .OliviaHealth .OliviaHealthTitle{
-        margin-left: 10px;
-        color: #336766;
-    }
-    #ItemDetails .ItemDetail .BaseHuile ul{
-        display: flex;
-        margin: 10px 0;
-        font-size: 15px;
-        list-style: none;
-    }
-    #ItemDetails .ItemDetail .BaseHuile li{
-        cursor: pointer;
-        list-style: none;
-        padding: 3px;
-        margin: 3px;
-        border: 1px rgb(163, 163, 163) solid;
-    }
-    #ItemDetails .ItemDetail .BaseHuile .BaseHuileSelected{
-        border: 2px #44b39b solid;
-    }
-    #ItemDetails .ItemDetail .Origine ul{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px 0;
-        font-size: 15px;
-        list-style: none;
-    }
-    #ItemDetails .ItemDetail .Origine li{
-        cursor: pointer;
-        list-style: none;
-        padding: 3px;
-        margin: 3px;
-    }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite{
-        display: flex;
-        align-items: center;
-        margin: 15px 0;
-    }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite #Quantite{
-        height: 30px;
-        width: 70px;
-        text-align: center;
-        font-size: inherit;
-        font-weight: bold;
+        font-size: 9px;
     }
     #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn
     {
-
-        margin-left: 15px;
-        padding: 10px;
-        font-size: 20px;
+        margin-left: 5px;
+        padding: 5px;
+        font-size: 10px;
         font-weight: 500;
         border-radius: 25px;
-        width: 200px;
-
+        width: 100px;
     }
     #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite{
-        margin-left: 15px;
+        margin-left: 5px;
         border-radius: 50%;
-        height: 30px;
-        width: 30px;
+        height: 10px;
+        width: 10px;
     }
     #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite:hover{
         cursor: pointer;
@@ -966,14 +950,16 @@ body
     }
     #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite svg
     {
-        margin: 5px 3px;
+        margin: 1px 1px;
+        height: 12px;
+        width: 12px;
     }
     #ItemDetails .ItemDetail #TelechargerDetails
     {
-        padding: 5px;
+        padding: 3px;
         font-size: 8px;
         border-radius: 20px;
-        width: 150px;
+        width: 120px;
     }
     #ItemDetails .ItemDetail #TelechargerDetails:hover{
         transform: scale(1.03);
