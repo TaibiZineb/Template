@@ -792,21 +792,25 @@ body
     {
         height: 150px;
         justify-self: start;
+        margin: 0;
     }
     #ItemDetails .ImgGallery .ImageShowed
     {
-        height: 200px;
+        height: 150px;
         width: 150px;
+        margin: 0;
     }
     #ItemDetails .ImgGallery .Gallery
     {
-        height: 130px;
-        max-width: 250px;
+        height: 150px;
+        max-width: 200px;
+        flex-wrap: wrap;
     }
     #ItemDetails .ImgGallery .GallerySilde
     {
         height: 100px;
         width: 162px;
+        margin: 0;
     }
     #ItemDetails .ImgGallery .GallerySilde #RightArrow 
     {
@@ -828,40 +832,42 @@ body
         height: 20%;
         width: 80%;
     }
-    #ItemDetails .ItemDetail
+    #ItemDetails .ItemDetail 
     {
         padding: 5px;
-    }
+        height: 25%;
+        width: 200px;
+    } 
     #ItemDetails .ItemDetail h3:first-of-type
     {
-        margin-top: 5px;
+        margin-top: 2px;
     }
     #ItemDetails .ItemDetail .ItemDetailTags
     {
-        margin: 5px 0;
+        margin: 2px 0;
     }
     #ItemDetails .ItemDetail .ItemDetailTags span
     {
-        padding: 3px;
+        padding: 2px;
         font-size: 8px;
     }
     #ItemDetails .ItemDetail .ItemDetailPrice,
     #ItemDetails .ItemDetail .ItemDetailPrice div
     {
-        margin: 5px 5px 2px 0;
+        margin: 2px 2px 2px 0;
     }
     #ItemDetails .ItemDetail .ItemDetailPrice h4
     {
-        margin-right: 3px;
+        margin-right: 2px;
     }
     #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice,
     #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h3
     {
-        font-size: 12px;    
+        font-size: 11px;    
     }
     #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h4
     {
-        font-size: 10px;    
+        font-size: 9px;    
     }
     #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice
     {
@@ -870,7 +876,7 @@ body
     #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice,
     #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice h3
     {
-        font-size: 12px;   
+        font-size: 11px;   
     }
     #ItemDetails .ItemDetail .ItemDetailPrice .Discount
     {
@@ -975,12 +981,7 @@ body
     {
         padding: 5px;
     }
-    #ItemDetails .ItemDetail 
-    {
-        padding: 5px;
-        height: 25%;
-        width: 200px;
-    } 
+  
     #ItemDescription
     {
         font-size: 12px;
