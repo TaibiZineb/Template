@@ -785,6 +785,8 @@ body
     }
     #Container
     {
+       
+        display: contents;
         grid-auto-rows: auto;
         margin-top: 3px;
         justify-items: center;
@@ -853,6 +855,10 @@ body
         margin: 0;
         width: 80%;
     }
+    #ItemDetails .ItemDetail .BaseHuile ul
+    {
+        font-size: small;
+    }
     /* Item Presentation END */
     /* Recommendation Items */ 
     #Recommendation
@@ -867,10 +873,9 @@ body
     }
     .Recommendation
     {
-        margin: 5px;
-        grid-gap: 5px;
-        grid-auto-rows: minmax(20px, auto);
-        width: 100%;
+        display:contents;
+        padding: 5px;
+        margin-left: 10px;
     }
     .heartp
     {
@@ -885,11 +890,10 @@ body
     .Recommendation .RecProduct
     {
         height: auto;
-        width: 120px;
+        width: 100%;
     }
     .imgrecom
     {
-        width: 120px;
         height: 85px;
     }
     .Recommendation .RecProduct .RecProductDes
