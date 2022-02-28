@@ -696,18 +696,17 @@ body
     }
     #NavBar #NavLogo 
     {
-        top: 1px;
+        top: 5px;
         left: 2px;
         height: 9px;
     }
     #NavBar .NavList 
     {
-        font-size: 5px;
-        width: 150px;
-        margin-top: 1px;
-        margin-left: 2px;
-        align-content: center;
-
+        font-size: 6px;
+        width: 186px;
+        margin-top: 4px;
+        margin-left: 1px;
+        margin-right: 67px;
     }
     #NavBar .NavList .NavListItem 
     {
@@ -716,10 +715,9 @@ body
     #NavBar .Profile
     {
         height: 70px;
-        right: 5px; 
+        right: 13px;
         top: 4px;
-        width: 70px;
-        
+        width: 70px;   
     }
     #NavBar .Profile .UserInfos .UserImg 
     {
