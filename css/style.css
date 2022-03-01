@@ -58,19 +58,27 @@ body
 {
     margin-top: 25px;
 }
-#NavBar .NavList .NavListItem a:hover
-{
-    color: #44b39b;
-}
 #NavBar .NavList .NavListItem
 {
     display: inline;
     margin-right: 10px;
 }
-#NavBar .NavList  .NavListItem a
+.NavListItemLink
 {
     color: black;
+    font-weight: 600;
     text-decoration: none;
+    position: relative;
+}
+.NavListItemLink:hover::after 
+{
+    content:"";
+    width: 100%;
+    height: 3px;
+    bottom: -3px;
+    background-color: #ff7070;
+    position: absolute;
+    left: 0px;
 }
 #NavBar .Profile
 {
@@ -157,14 +165,16 @@ body
     grid-auto-rows: minmax(100px, auto);
 }
 /* Item Presentation */
-#ItemDetails{
+#ItemDetails
+{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 10px;
     margin-top: 30px;
     width: 90%;
 }
-#ItemDetails .ImgGallery{
+#ItemDetails .ImgGallery
+{
     grid-column: 1/3;
     justify-self: center;
 }
@@ -206,7 +216,8 @@ body
 #ItemDetails .ImgGallery .Gallery .ActiveImg{
     border: 2px #44b39b solid;
 }
-#ItemDetails .ImageShowed{
+#ItemDetails .ImageShowed
+{
     height: 80%;
     width: 100%;
 }
@@ -524,7 +535,8 @@ body
 }
 /* Service Description END */
 /* Email Abonnement */
-#EmailAbonnement{
+#EmailAbonnement
+{
     color: #ffffff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -532,7 +544,8 @@ body
     background-color: #44b39b;
     width: 100%;
 }
-#EmailAbonnement .Newsletter p{
+#EmailAbonnement .Newsletter p
+{
     margin-top: 50px;
     margin-left: 20%;
     margin-bottom: 50px;
@@ -771,6 +784,7 @@ body
         display: block;
         padding: 1px;
     }
+
     .burgerMenu.active .bar:nth-child(2)
     {
         opacity: 0;
@@ -779,18 +793,20 @@ body
     {
         transform: translateY(8px) rotate(45deg);
         background-color: #000000; 
+        width: 12px;
     }
     .burgerMenu.active .bar:nth-child(3)
     {
         transform: translateY(-8px) rotate(-45deg);
-        background-color: #000000; 
+        background-color: #000000;
+        width: 12px; 
     }
     .burgerMenu.active
     {
-        margin: 18px;
-        padding: 15px;
+        margin: 13px;
+        padding: 14px;
         z-index: 9999;
-        margin-left: 85%;
+        margin-left: 88%;
     }
     .NavListItem
     {
@@ -969,8 +985,12 @@ body
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding: 0px;
+        padding: 0;
         gap: 0px;
+    }
+    #ServiceDescription div
+    {
+        margin: 2px;
     }
     #ServiceDescription .ServiceDescriptionImg
     {
@@ -987,59 +1007,73 @@ body
     }
     #ServiceDescription .ServiceDescriptionP 
     {
-
         font-size: 8px;
     }
-
     /* Service Description END */
     /* Email Abonnement */
     #EmailAbonnement
     {
-        width: 100%; 
+        display: flex;
+        flex-direction: column;
     }
     #EmailAbonnement .Newsletter p
     {
-        font-size: 12px;
+        font-size: 16px;
+        text-align: center;
+        margin: 7px;
     }
     #EmailAbonnement .SentEmailForm
     {
-        margin: 30px 0px;
-        right: 50px;
+        margin: 0;
+        right: 0;
+        align-items: center;
     }
     #EmailAbonnement .SentEmailForm .TextInput 
     {
         height: auto;
         width: auto;
+        margin-right: 2px;
     }
     #EmailAbonnement .SentEmailForm #SentButton 
     {
-        height: 25px;
-        width: 32px;
+        height: 26px;
+        width: 27px;
+        margin: 0;
     }
     #EmailAbonnement .SentEmailForm #SentButton svg
     {
-        height: 20px;
-        width: 30px;
-        padding: 1px;
+        height: 18px;
+        width: 18px;
+        padding: 3px;
+        margin: 1px;
     }
     #EmailAbonnement .SentEmailForm div:first-of-type
     {
-        margin-left: 5px;
+        margin-left: 25%;
+    }  
+    #EmailAbonnement .SentEmailForm .CheckboxP
+    {
+        margin: 6px;
+        align-items: center;
     }
-  
-    
+    #EmailAbonnement .SentEmailForm .CheckboxP input 
+    {
+        margin-left: 19px;
+        margin-right: 5px;
+    }
     #EmailAbonnement .SentEmailForm .CheckboxP p
     {
-        font-size: 8px;
-        width: 80%;
+        font-size: 10px;
+        margin-left: 21px;
+        margin: 5px;
     }
     /* Email Abonnement END */
     /* Presentation Paraghraph */
     #PresentationParagraph p
     {
-        margin: 30px;
-        width: 80%;
-        font-size: 12px;
+        margin: 7px;
+        font-size: 10px;
+        width: 85%;
     }
     /* Presentation Paraghraph END */
     /* Footer */
@@ -1053,11 +1087,13 @@ body
     #FooterDiv .PageInfo div
     {
         margin: 1px;
+        display: grid;
     }
 
     #FooterDiv .PageInfo ul li
     {
-        padding: 2px 0;
+        padding: 1px;
+        font-size: 11px;
     }
     #FooterDiv .PageInfo ul label
     {
@@ -1070,7 +1106,17 @@ body
     }
     #FooterDiv .PageInfo .Com .ComP
     {
-        font-size: 11px;
+        font-size: 13px;
+        grid-column: 3/5;
+        align-items: center;
+    }
+    #FooterDiv .PageInfo .APropos
+    {
+        grid-column: 1/3;
+    }
+    #FooterDiv .PageInfo .commercants
+    {
+        grid-column: 3/5;
     }
 
     #FooterDiv .PageInfo .APropos,
