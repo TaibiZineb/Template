@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;    
-    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;  
+    
 }
 
 body
@@ -67,7 +67,6 @@ body
     display: inline;
     margin-right: 10px;
 }
-
 #NavBar .NavList  .NavListItem a
 {
     color: black;
@@ -133,6 +132,21 @@ body
 #NavBar .Profile .Cart svg
 {
     margin-top: 5px;
+}
+.burgerMenu
+{
+    display: none;
+    cursor: pointer;
+}
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #44b39b;
 }
 /* Navigation Bar END */
 /* Main Page Container */
@@ -224,10 +238,8 @@ body
 }
 #ItemDetails .ItemDetail .ItemDetailPrice h3{
     color: #000000;
-    font-weight: bold;
 }
 #ItemDetails .ItemDetail .ItemDetailPrice h4{
-    font-weight: bold;
     margin-right: 3px;
 }
 #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice,
@@ -321,14 +333,13 @@ body
     width: 70px;
     text-align: center;
     font-size: inherit;
-    font-weight: bold;
 }
 #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn{
     cursor: pointer;
     margin-left: 15px;
     padding: 10px;
     font-size: 20px;
-    font-weight: 500;
+
     color: #ffffff;
     border: 1px #44b39b solid;
     border-radius: 25px;
@@ -415,7 +426,6 @@ body
     margin-bottom: 50px;
     text-align: center;
     font-size: 40px;
-    font-weight: 100;
     grid-column: 1/5;
 }
 .Recommendation{
@@ -455,11 +465,6 @@ body
 .Recommendation .RecProduct .RecProductDes h3{
     color: #336766;
 }
-.Recommendation .RecProduct .RecProductDes h3,
-.Recommendation .RecProduct .RecProductDes h5,
-.Recommendation .RecProduct .RecProductDes h6{
-    font-weight: 100;
-}
 .Recommendation .RecProduct .RecProductDes .RecProductPrice{
     margin: 15px 0;
     display: flex;
@@ -467,10 +472,8 @@ body
 }
 .Recommendation .RecProduct .RecProductDes .RecProductPrice h3{
     color: #000000;
-    font-weight: bold;
 }
 .Recommendation .RecProduct .RecProductDes .RecProductPrice h4{
-    font-weight: bold;
     margin-right: 3px;
 }
 .Recommendation .RecProduct .RecProductDes .RecProductTags span{
@@ -513,7 +516,6 @@ body
 }
 #ServiceDescription .ServiceDescriptionHead h4
 {
-    font-weight: 100;
     font-size: 17px;
 }
 #ServiceDescription .ServiceDescriptionP{
@@ -535,7 +537,6 @@ body
     margin-left: 20%;
     margin-bottom: 50px;
     font-size: 25px;
-    font-weight: bold;
 }
 #EmailAbonnement .SentEmailForm{
     margin: 30px 0px;
@@ -562,7 +563,6 @@ body
 }
 #EmailAbonnement .SentEmailForm #SentButton svg{
     padding: 5px;
-
 }
 #EmailAbonnement .SentEmailForm .CheckboxP{
     margin-top: 5px;
@@ -616,26 +616,20 @@ body
 #FooterDiv .PageInfo .Com .ComHead h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
 #FooterDiv .PageInfo ul{
     list-style: none;
 }
-
 #FooterDiv .PageInfo ul a{
     color: #ffffff;
     text-decoration: none;
 }
-
 #FooterDiv .PageInfo ul li{
     padding: 5px 0;
     font-size: 13px;
 }
-
 #FooterDiv .PageInfo ul label{
     font-size: 20px;
-    font-weight: 700;
 }
-
 #FooterDiv .ComInfo{
     display: flex;
     text-align: center;
@@ -645,11 +639,9 @@ body
     justify-content: space-around;
     z-index: 1000;
 }
-
 #FooterDiv .ComInfo div{
     width: 400px;
 }
-
 #FooterDiv .ComInfo .ComInfoSocial span{
     margin: 5px;
 }
@@ -660,7 +652,6 @@ body
 /* Footer END*/
 .badge{
     font-size: 14px;
-    font-weight: 900;
     position: absolute;
     border: solid #44b39b;
     border-radius: 60%;
@@ -693,95 +684,123 @@ body
     {
         height: 30px;
         width: 100%;
+        justify-content: initial;
     }
     #NavBar #NavLogo 
     {
-        top: 5px;
-        left: 2px;
-        height: 9px;
+        top: 7px;
+        left: 36px;
+        height: 15px;
     }
-    #NavBar .NavList 
+    .NavList 
     {
-        font-size: 6px;
-        width: 186px;
-        margin-top: 4px;
-        margin-left: 1px;
-        margin-right: 67px;
+        position: absolute;
+        left: -106%;
+        transition: 0.3s;
+        padding: 6px;
+        margin: 5px;
+        top: 9px;
+        width: 93%;
+        background-color:#44b39b;
+        z-index: 9999;
     }
     #NavBar .NavList .NavListItem 
     {
         margin-right: 3px;
+        display: block;  
     }
     #NavBar .Profile
     {
-        height: 70px;
-        right: 13px;
-        top: 4px;
-        width: 70px;   
+        right: 22px;
+        top: 4px;  
     }
     #NavBar .Profile .UserInfos .UserImg 
     {
-        height: 12px;
-        width: 12px;
+        height: 16px;
+        width: 16px;
         align-content: center;
-        margin-top: 2px;
-        margin-left: 2px;
-      
     }
     #NavBar .Profile .UserInfos .UserImg .fa-user 
     {
-        top: 5%;
-        left: 5%;
+        top: 17%;
+        left: 17%;
         height: 5px;
         width: 5px;
-        font-size:xx-small;
-        align-content: center;
+        font-size:x-small;
     }
     #NavBar .Profile .UserInfos .UserName
     {
         margin-top: 5px;
         margin-left: 2px;
-        font-size: 5px;
+        font-size: 9px;
     }
     #NavBar .Profile .Favorite 
     {
         margin-top: 1px;
-        margin-left: 5px;
-        height: 12px;
-        width: 12px;
-        align-content: center;
+        height: 15px;
+        width: 15px;
     }
     #NavBar .Profile .Favorite svg 
     {
-        height: 7px;
-        width: 7px;
-        padding: 2.5px;
-        margin-top: 2.5px;
+        height: 9px;
+        width: 9px;
+        padding: 1px;
+        margin-top: 0;
     }
     #NavBar .Profile .Cart 
     {
         margin-top: 1px;
-        margin-left: 5px;
-        height: 12px;
-        width: 12px;
+        height: 15px;
+        width: 15px;
     } 
     #NavBar .Profile .Cart svg 
     {
-        margin-top: 1px;
-        height: 8px;
-        width: 8px;
-        padding: 2px;
-        margin: auto;
+        height: 9px;
+        width: 9px;
+        padding: 1px;
         justify-content: center;
-        
     }
     #NavBar .Profile .Cart .badge
     {
         font-size: 5px;
-        font-weight: 900;
         height: 5px;
         width: 3px;
     }
+    .burgerMenu
+    {
+        display: block;
+        padding: 1px;
+    }
+    .burgerMenu.active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+    .burgerMenu.active .bar:nth-child(1)
+    {
+        transform: translateY(8px) rotate(45deg);
+        background-color: #000000; 
+    }
+    .burgerMenu.active .bar:nth-child(3)
+    {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: #000000; 
+    }
+    .burgerMenu.active
+    {
+        margin: 18px;
+        padding: 15px;
+        z-index: 9999;
+        margin-left: 85%;
+    }
+    .NavListItem
+    {
+        margin: 16px 0;
+    }
+    
+    .NavList.active
+    {
+        left: 0;
+    } 
     #Container
     {
        
@@ -806,7 +825,7 @@ body
     #ItemDetails .ImgGallery .ImageShowed
     {
         height: 100%;
-        width: 80%;
+        width: 100%;
         margin: 0;
     }
     #ItemDetails .ImgGallery .Gallery
@@ -841,7 +860,7 @@ body
     #ItemDetails .ImgGallery .GallerySilde
     {
         height: 100px;
-        width: 90%;
+        width: 100%;
         margin: 0;
     }
     #ItemDetails .ImgGallery .GallerySilde #RightArrow 
@@ -852,7 +871,7 @@ body
     {
         margin-left: 10px;
         height: 56px;
-        width: 37px;
+        width: 47px;
     }
     #ItemDetails .ImageShowed
     {
@@ -881,6 +900,8 @@ body
     #ItemDetails .ItemDetail .BaseHuile ul
     {
         font-size: small;
+        padding: 2px;
+        margin: 2px;
     }
     #ItemDescription .ItemDescriptionItems 
     {
@@ -898,7 +919,6 @@ body
     {
         margin-bottom: 20px;
         font-size: 20px;
-        font-weight: 50;
     }
     .Recommendation
     {
@@ -1032,19 +1052,16 @@ body
     }
     #FooterDiv .PageInfo div
     {
-        margin: 2px;
+        margin: 1px;
     }
 
     #FooterDiv .PageInfo ul li
     {
         padding: 2px 0;
-        font-size: 10px;
     }
-
     #FooterDiv .PageInfo ul label
     {
         font-size: 15px;
-        font-weight: 700;
     }
     #FooterDiv .PageInfo .Com #ComLogoimg
     {
