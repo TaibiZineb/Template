@@ -1,16 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;
 }
-body
-{
+body {
     margin: 0.1px;
     overflow-x: hidden;
 }
 /* Alert Message Div */
-#MessageDiv
-{
+#MessageDiv {
     padding-top: 5px;
     color: black;
     display: flex;
@@ -19,25 +17,21 @@ body
     height: 30px;
     background-color: rgb(252, 145, 145);
 }
-#MessageDiv a
-{
+#MessageDiv a {
     color: black;
 }
-#MessageDiv span
-{
+#MessageDiv span {
     position: absolute;
     top: 7px;
     right: 15px;
     font-size: 15px;
 }
-#MessageDiv span #msgdivimg
-{
+#MessageDiv span #msgdivimg {
     height: 13px;
 }
 /* Alert Message Div END */
 /* Navigation Bar */
-#NavBar
-{
+#NavBar {
     position: relative;
     display: flex;
     justify-content: center;
@@ -45,32 +39,27 @@ body
     border-bottom: 1px rgb(167, 166, 166) solid;
     height: 70px;
 }
-#NavBar #NavLogo
-{
+#NavBar #NavLogo {
     position: absolute;
     display: flex;
     top: 15px;
     left: 50px;
 }
-#NavBar .NavList
-{
+#NavBar .NavList {
     margin-top: 25px;
 }
-#NavBar .NavList .NavListItem
-{
+#NavBar .NavList .NavListItem {
     display: inline;
     margin-right: 10px;
 }
-.NavListItemLink
-{
+.NavListItemLink {
     color: black;
     font-weight: 600;
     text-decoration: none;
     position: relative;
 }
-.NavListItemLink:hover::after 
-{
-    content:"";
+.NavListItemLink:hover::after {
+    content: "";
     width: 100%;
     height: 3px;
     bottom: -3px;
@@ -78,41 +67,35 @@ body
     position: absolute;
     left: 0px;
 }
-#NavBar .Profile
-{
+#NavBar .Profile {
     position: absolute;
     display: flex;
     top: 15px;
     right: 50px;
 }
-#NavBar .Profile .UserInfos
-{
+#NavBar .Profile .UserInfos {
     display: flex;
 }
-#NavBar .Profile .UserInfos .UserImg
-{
+#NavBar .Profile .UserInfos .UserImg {
     border: 1px #336766 solid;
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    position:relative;
+    position: relative;
     background-color: #44b39b;
 }
-.fa-user
-{
-    position:absolute;
-    top:30%;
-    left:30%;
+.fa-user {
+    position: absolute;
+    top: 30%;
+    left: 30%;
     color: blanchedalmond;
     size: 0px;
 }
-#NavBar .Profile .UserInfos .UserName
-{
+#NavBar .Profile .UserInfos .UserName {
     margin-top: 10px;
     margin-left: 5px;
 }
-#NavBar .Profile .Favorite
-{
+#NavBar .Profile .Favorite {
     margin-top: 5px;
     margin-left: 10px;
     border: 1px #ccf5ec solid;
@@ -121,12 +104,10 @@ body
     width: 30px;
     background-color: #ccf5ec;
 }
-#NavBar .Profile .Favorite svg
-{
+#NavBar .Profile .Favorite svg {
     margin-top: 5px;
 }
-#NavBar .Profile .Cart
-{
+#NavBar .Profile .Cart {
     margin-top: 5px;
     margin-left: 10px;
     border: 1px #ccf5ec solid;
@@ -135,17 +116,14 @@ body
     width: 30px;
     background-color: #ccf5ec;
 }
-#NavBar .Profile .Cart svg
-{
+#NavBar .Profile .Cart svg {
     margin-top: 5px;
 }
-.burgerMenu
-{
+.burgerMenu {
     display: none;
     cursor: pointer;
 }
-.bar
-{
+.bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -156,42 +134,39 @@ body
 }
 /* Navigation Bar END */
 /* Main Page Container */
-#Container
-{
+#Container {
     display: grid;
     justify-items: center;
     grid-auto-rows: minmax(100px, auto);
 }
 /* Item Presentation */
-#ItemDetails
-{
+#ItemDetails {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     margin-top: 30px;
     width: 90%;
 }
-#ItemDetails .ImgGallery
-{
+#ItemDetails .ImgGallery {
     grid-column: 1/3;
     justify-self: center;
 }
-#ItemDetails .ImgGallery .ImageShowed{
+#ItemDetails .ImgGallery .ImageShowed {
     height: 500px;
     width: 500px;
 }
-#ItemDetails .ImgGallery .Gallery{
+#ItemDetails .ImgGallery .Gallery {
     display: flex;
     align-items: center;
     height: 130px;
     max-width: 450px;
     overflow-x: hidden;
 }
-#ItemDetails .ImgGallery .ImageShowed img{
+#ItemDetails .ImgGallery .ImageShowed img {
     height: 100%;
     width: 100%;
 }
-#ItemDetails .ImgGallery .GallerySilde{
+#ItemDetails .ImgGallery .GallerySilde {
     height: 150px;
     width: 500px;
     display: flex;
@@ -199,76 +174,74 @@ body
     flex-wrap: nowrap;
 }
 #ItemDetails .ImgGallery .GallerySilde #RightArrow {
-    -webkit-transform:rotate(180deg);
+    -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
     margin-left: 5px;
 }
-#ItemDetails .ImgGallery .Gallery .GalleryImg{
+#ItemDetails .ImgGallery .Gallery .GalleryImg {
     margin-left: 10px;
     height: 70px;
     width: 70px;
 }
-#ItemDetails .ImgGallery .Gallery .ActiveImg{
+#ItemDetails .ImgGallery .Gallery .ActiveImg {
     border: 2px #44b39b solid;
 }
-#ItemDetails .ImageShowed
-{
+#ItemDetails .ImageShowed {
     height: 80%;
     width: 100%;
 }
-#ItemDetails .GallerySilde{
+#ItemDetails .GallerySilde {
     height: 20%;
     width: 100%;
 }
-#ItemDetails .ItemDetail{
+#ItemDetails .ItemDetail {
     padding: 15px;
     grid-column: 3/5;
 }
-#ItemDetails .ItemDetail h3:first-of-type{
+#ItemDetails .ItemDetail h3:first-of-type {
     margin-top: 15px;
 }
-#ItemDetails .ItemDetail .ItemDetailTags{
+#ItemDetails .ItemDetail .ItemDetailTags {
     margin: 15px 0;
 }
-#ItemDetails .ItemDetail .ItemDetailTags span{
+#ItemDetails .ItemDetail .ItemDetailTags span {
     padding: 3px;
     font-size: 10px;
     border: 1px rgb(245, 245, 245) solid;
     background-color: rgb(245, 245, 245);
 }
 #ItemDetails .ItemDetail .ItemDetailPrice,
-#ItemDetails .ItemDetail .ItemDetailPrice div{
+#ItemDetails .ItemDetail .ItemDetailPrice div {
     margin: 15px 15px 5px 0;
     display: flex;
-    align-items:baseline;
+    align-items: baseline;
 }
-#ItemDetails .ItemDetail .ItemDetailPrice h3{
+#ItemDetails .ItemDetail .ItemDetailPrice h3 {
     color: #000000;
 }
-#ItemDetails .ItemDetail .ItemDetailPrice h4{
+#ItemDetails .ItemDetail .ItemDetailPrice h4 {
     margin-right: 3px;
 }
 #ItemDetails .ItemDetail .ItemDetailPrice .NewPrice,
-#ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h3{
-    font-size: 25px;    
+#ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h3 {
+    font-size: 25px;
 }
-#ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h4{
-    font-size: 20px;    
+#ItemDetails .ItemDetail .ItemDetailPrice .NewPrice h4 {
+    font-size: 20px;
 }
-#ItemDetails .ItemDetail .ItemDetailPrice .OldPrice{
+#ItemDetails .ItemDetail .ItemDetailPrice .OldPrice {
     margin-left: 40px;
 }
 #ItemDetails .ItemDetail .ItemDetailPrice .OldPrice,
-#ItemDetails .ItemDetail .ItemDetailPrice .OldPrice h3{
+#ItemDetails .ItemDetail .ItemDetailPrice .OldPrice h3 {
     font-size: 15px;
     color: #6b6b6b;
-    text-decoration: line-through ;
-    
+    text-decoration: line-through;
 }
-#ItemDetails .ItemDetail .ItemDetailPrice .Discount{
+#ItemDetails .ItemDetail .ItemDetailPrice .Discount {
     color: #ffffff;
     padding: 3px 7px;
     font-size: 13px;
@@ -276,74 +249,74 @@ body
     border-radius: 20px;
     background-color: #204546;
 }
-#ItemDetails .ItemDetail .OliviaHealth{
+#ItemDetails .ItemDetail .OliviaHealth {
     display: flex;
     align-items: center;
     margin: 15px 0;
 }
-#ItemDetails .ItemDetail .OliviaHealth .OliviaHealthLogo{
+#ItemDetails .ItemDetail .OliviaHealth .OliviaHealthLogo {
     border: 1px #336766 solid;
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    position:relative;
+    position: relative;
     background-color: #33676610;
 }
-.fa-feather{
-    position:absolute;
-    top:20%;
-    left:20%;
+.fa-feather {
+    position: absolute;
+    top: 20%;
+    left: 20%;
     color: #336766;
 }
-#ItemDetails .ItemDetail .OliviaHealth .OliviaHealthTitle{
+#ItemDetails .ItemDetail .OliviaHealth .OliviaHealthTitle {
     margin-left: 10px;
     color: #336766;
 }
-#ItemDetails .ItemDetail .BaseHuile ul{
+#ItemDetails .ItemDetail .BaseHuile ul {
     display: flex;
     margin: 10px 0;
     font-size: 15px;
     list-style: none;
 }
-#ItemDetails .ItemDetail .BaseHuile li{
+#ItemDetails .ItemDetail .BaseHuile li {
     cursor: pointer;
     list-style: none;
     padding: 3px;
     margin: 3px;
     border: 1px rgb(163, 163, 163) solid;
 }
-#ItemDetails .ItemDetail .BaseHuile .BaseHuileSelected{
+#ItemDetails .ItemDetail .BaseHuile .BaseHuileSelected {
     border: 2px #44b39b solid;
 }
-#ItemDetails .ItemDetail .Origine ul{
+#ItemDetails .ItemDetail .Origine ul {
     display: flex;
     flex-wrap: wrap;
     margin: 10px 0;
     font-size: 15px;
     list-style: none;
 }
-#ItemDetails .ItemDetail .Origine li{
+#ItemDetails .ItemDetail .Origine li {
     cursor: pointer;
     list-style: none;
     padding: 3px;
     margin: 3px;
     border: 1px rgb(163, 163, 163) solid;
 }
-#ItemDetails .ItemDetail .Origine .OrigineSelected{
+#ItemDetails .ItemDetail .Origine .OrigineSelected {
     border: 2px #44b39b solid;
 }
-#ItemDetails .ItemDetail .ProductCommand .ProductQuantite{
+#ItemDetails .ItemDetail .ProductCommand .ProductQuantite {
     display: flex;
     align-items: center;
     margin: 15px 0;
 }
-#ItemDetails .ItemDetail .ProductCommand .ProductQuantite #Quantite{
+#ItemDetails .ItemDetail .ProductCommand .ProductQuantite #Quantite {
     height: 30px;
     width: 70px;
     text-align: center;
     font-size: inherit;
 }
-#ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn{
+#ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn {
     cursor: pointer;
     margin-left: 15px;
     padding: 10px;
@@ -355,10 +328,10 @@ body
     background-color: #44b39b;
     transition-duration: 0.5s;
 }
-#ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn:hover{
+#ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn:hover {
     transform: scale(1.03);
 }
-#ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite{
+#ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite {
     cursor: pointer;
     margin-left: 15px;
     border: 1px #cacaca solid;
@@ -367,7 +340,7 @@ body
     width: 30px;
     background-color: #ffffff;
 }
-#ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite:hover{
+#ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite:hover {
     cursor: pointer;
     margin-left: 15px;
     border: 1px #ff7070 solid;
@@ -376,10 +349,10 @@ body
     width: 30px;
     background-color: #ff7070;
 }
-#ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite svg{
+#ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite svg {
     margin: 5px 3px;
 }
-#ItemDetails .ItemDetail #TelechargerDetails{
+#ItemDetails .ItemDetail #TelechargerDetails {
     cursor: pointer;
     padding: 5px;
     font-size: 15px;
@@ -389,102 +362,99 @@ body
     background-color: #ffffff;
     transition-duration: 0.5s;
 }
-#ItemDetails .ItemDetail #TelechargerDetails:hover{
+#ItemDetails .ItemDetail #TelechargerDetails:hover {
     transform: scale(1.03);
 }
 /* Item Presentation END */
 /* Item Description */
-#ItemDescription{
+#ItemDescription {
     margin: 20px;
     width: 85%;
 }
-#ItemDescription .ItemDescriptionItems{
+#ItemDescription .ItemDescriptionItems {
     border-bottom: 1px rgb(233, 233, 233) solid;
     width: auto;
-
 }
-#ItemDescription .ItemDescriptionItems ul{
+#ItemDescription .ItemDescriptionItems ul {
     display: flex;
     justify-content: baseline;
     height: 40px;
 }
-#ItemDescription .ItemDescriptionItems ul li{
+#ItemDescription .ItemDescriptionItems ul li {
     list-style: none;
     padding: 10px 20px;
 }
-#ItemDescription .ItemDescriptionItems ul li:hover{
+#ItemDescription .ItemDescriptionItems ul li:hover {
     border-bottom: 5px #44b39b solid;
     cursor: pointer;
 }
-.SelectedItem{
+.SelectedItem {
     border-bottom: 5px #44b39b solid;
 }
-#ItemDescription .ItemDescriptionDes{
+#ItemDescription .ItemDescriptionDes {
     margin: 10px;
 }
 /* Item Description END */
 /* Recommendation Items */
-#Recommendation{
+#Recommendation {
     margin: 25px 0;
     justify-content: center;
     justify-items: center;
-    border: 1px #ffffff solid;   
+    border: 1px #ffffff solid;
 }
-#Recommendation h1{
+#Recommendation h1 {
     margin-bottom: 50px;
     text-align: center;
     font-size: 40px;
     grid-column: 1/5;
 }
-.Recommendation{
+.Recommendation {
     margin: 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
-.heartp
-{
-    position:absolute;
+.heartp {
+    position: absolute;
     float: right;
 
     margin-right: 100px;
 }
-.imgproduit
-{
+.imgproduit {
     margin-right: 195px;
 }
-.Recommendation .RecProduct{
+.Recommendation .RecProduct {
     border: 1px rgb(230, 230, 230) solid;
     height: auto;
     width: 281px;
     transition-duration: 0.7s;
 }
-.Recommendation .RecProduct:hover{
+.Recommendation .RecProduct:hover {
     transform: scale(1.05);
 }
-.Recommendation .RecProduct a{
+.Recommendation .RecProduct a {
     text-decoration: none;
     color: #000000;
 }
-.Recommendation .RecProduct .RecProductDes{
+.Recommendation .RecProduct .RecProductDes {
     margin: 20px;
 }
-.Recommendation .RecProduct .RecProductDes h3{
+.Recommendation .RecProduct .RecProductDes h3 {
     color: #336766;
 }
-.Recommendation .RecProduct .RecProductDes .RecProductPrice{
+.Recommendation .RecProduct .RecProductDes .RecProductPrice {
     margin: 15px 0;
     display: flex;
     align-items: baseline;
 }
-.Recommendation .RecProduct .RecProductDes .RecProductPrice h3{
+.Recommendation .RecProduct .RecProductDes .RecProductPrice h3 {
     color: #000000;
 }
-.Recommendation .RecProduct .RecProductDes .RecProductPrice h4{
+.Recommendation .RecProduct .RecProductDes .RecProductPrice h4 {
     margin-right: 3px;
 }
-.Recommendation .RecProduct .RecProductDes .RecProductTags span{
+.Recommendation .RecProduct .RecProductDes .RecProductTags span {
     padding: 3px;
     font-size: 10px;
     border: 1px rgb(245, 245, 245) solid;
@@ -492,7 +462,7 @@ body
 }
 /* Recommendation Items END */
 /* Service Description */
-#ServiceDescription{
+#ServiceDescription {
     padding: 30px;
     border: 1px #f7f7f7 solid;
     display: grid;
@@ -504,11 +474,11 @@ body
     background-color: #f7f7f7;
     width: 100%;
 }
-#ServiceDescription div{
+#ServiceDescription div {
     text-align: center;
     justify-content: center;
 }
-#ServiceDescription .ServiceDescriptionImg{
+#ServiceDescription .ServiceDescriptionImg {
     position: relative;
     margin: 5px;
     margin-left: auto;
@@ -517,23 +487,21 @@ body
     border-radius: 50%;
     background-color: #ffffff;
     height: 30px;
-    width: 30px;  
+    width: 30px;
 }
-#ServiceDescription .ServiceDescriptionImg svg{
+#ServiceDescription .ServiceDescriptionImg svg {
     padding-top: 5px;
 }
-#ServiceDescription .ServiceDescriptionHead h4
-{
+#ServiceDescription .ServiceDescriptionHead h4 {
     font-size: 17px;
 }
-#ServiceDescription .ServiceDescriptionP{
+#ServiceDescription .ServiceDescriptionP {
     color: #336766;
     font-size: 12px;
 }
 /* Service Description END */
 /* Email Abonnement */
-#EmailAbonnement
-{
+#EmailAbonnement {
     color: #ffffff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -541,52 +509,51 @@ body
     background-color: #44b39b;
     width: 100%;
 }
-#EmailAbonnement .Newsletter p
-{
+#EmailAbonnement .Newsletter p {
     margin-top: 50px;
     margin-left: 20%;
     margin-bottom: 50px;
     font-size: 25px;
 }
-#EmailAbonnement .SentEmailForm{
+#EmailAbonnement .SentEmailForm {
     margin: 30px 0px;
     right: 50px;
 }
-#EmailAbonnement .SentEmailForm div:first-of-type{
+#EmailAbonnement .SentEmailForm div:first-of-type {
     margin-left: 5px;
     display: flex;
 }
-#EmailAbonnement .SentEmailForm .TextInput{
+#EmailAbonnement .SentEmailForm .TextInput {
     padding-left: 20px;
     height: 35px;
     width: 250px;
     border: 1px rgb(163, 163, 163) solid;
     border-radius: 20px;
 }
-#EmailAbonnement .SentEmailForm #SentButton{
+#EmailAbonnement .SentEmailForm #SentButton {
     margin-left: 15px;
     border: 1px #336766 solid;
     border-radius: 50%;
     background-color: #336766;
     height: 35px;
-    width: 35px; 
+    width: 35px;
 }
-#EmailAbonnement .SentEmailForm #SentButton svg{
+#EmailAbonnement .SentEmailForm #SentButton svg {
     padding: 5px;
 }
-#EmailAbonnement .SentEmailForm .CheckboxP{
+#EmailAbonnement .SentEmailForm .CheckboxP {
     margin-top: 5px;
     display: flex;
     align-items: baseline;
 }
-#EmailAbonnement .SentEmailForm .CheckboxP p{
+#EmailAbonnement .SentEmailForm .CheckboxP p {
     margin-left: 5px;
     font-size: 10px;
     width: 80%;
 }
 /* Email Abonnement END */
 /* Presentation Paraghraph */
-#PresentationParagraph{
+#PresentationParagraph {
     display: flex;
     justify-content: center;
     color: #ffffff;
@@ -594,7 +561,7 @@ body
     background-color: #204546;
     width: 100%;
 }
-#PresentationParagraph p{
+#PresentationParagraph p {
     margin: 30px;
     text-align: center;
     width: 80%;
@@ -602,14 +569,13 @@ body
 /* Presentation Paraghraph END */
 /* Main Page Container END */
 /* Footer */
-#FooterDiv{
+#FooterDiv {
     color: #ffffff;
     justify-content: center;
     border: 1px #336766 solid;
     background-color: #336766;
 }
-#FooterDiv .PageInfo
-{
+#FooterDiv .PageInfo {
     margin: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -617,43 +583,38 @@ body
     grid-auto-rows: minmax(100px, auto);
     border-bottom: 1px rgba(255, 255, 255, 0.7) solid;
 }
-#FooterDiv .PageInfo .column1
-{
+#FooterDiv .PageInfo .column1 {
     display: flex;
     width: max-content;
 }
-#FooterDiv .PageInfo .column2
-{
+#FooterDiv .PageInfo .column2 {
     display: flex;
     width: max-content;
 }
-
-
-#FooterDiv .PageInfo div{
+#FooterDiv .PageInfo div {
     margin: 10px;
 }
-#FooterDiv .PageInfo .Com{
+#FooterDiv .PageInfo .Com {
     text-align: center;
 }
-#FooterDiv .PageInfo .Com .ComHead h1
-{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+#FooterDiv .PageInfo .Com .ComHead h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#FooterDiv .PageInfo ul{
+#FooterDiv .PageInfo ul {
     list-style: none;
 }
-#FooterDiv .PageInfo ul a{
+#FooterDiv .PageInfo ul a {
     color: #ffffff;
     text-decoration: none;
 }
-#FooterDiv .PageInfo ul li{
+#FooterDiv .PageInfo ul li {
     padding: 5px 0;
     font-size: 13px;
 }
-#FooterDiv .PageInfo ul label{
+#FooterDiv .PageInfo ul label {
     font-size: 20px;
 }
-#FooterDiv .ComInfo{
+#FooterDiv .ComInfo {
     display: flex;
     text-align: center;
     margin-top: -30px;
@@ -662,18 +623,21 @@ body
     justify-content: space-around;
     z-index: 1000;
 }
-#FooterDiv .ComInfo div{
+#FooterDiv .ComInfo div {
     width: 400px;
 }
-#FooterDiv .ComInfo .ComInfoSocial span{
+#FooterDiv .ComInfo .ComInfoSocial span {
     margin: 5px;
 }
-
-#FooterDiv .ComInfo .ComInfoSocial .Facebook{
+#FooterDiv .ComInfo .ComInfoSocial .Facebook {
     margin-left: 50px;
 }
+.column1e2
+    {
+        border-bottom: 1px rgb(167, 166, 166) solid;
+    }
 /* Footer END*/
-.badge{
+.badge {
     font-size: 14px;
     position: absolute;
     border: solid #44b39b;
@@ -682,41 +646,33 @@ body
     width: 6px;
     font-size: 9px;
     color: blanchedalmond;
-    background:#44b39b;
+    background: #44b39b;
 }
-@media only screen and (max-width: 600px) 
-{
-    #MessageDiv
-    {
+@media only screen and (max-width:600px) {
+    #MessageDiv {
         height: 12px;
     }
-    #MessageDiv p 
-    {
+    #MessageDiv p {
         font-size: 6px;
     }
-    #MessageDiv span 
-    {
+    #MessageDiv span {
         font-size: 7px;
         top: 5px;
     }
-    #MessageDiv span #msgdivimg
-    {
+    #MessageDiv span #msgdivimg {
         height: 10px;
     }
-    #NavBar
-    {
+    #NavBar {
         height: 30px;
         width: 100%;
         justify-content: initial;
     }
-    #NavBar #NavLogo 
-    {
+    #NavBar #NavLogo {
         top: 7px;
         left: 36px;
         height: 15px;
     }
-    .NavList 
-    {
+    .NavList {
         position: absolute;
         left: -106%;
         transition: 0.3s;
@@ -724,472 +680,709 @@ body
         margin: 5px;
         top: 9px;
         width: 93%;
-        background-color:#44b39b;
+        background-color: #44b39b;
         z-index: 9999;
     }
-    #NavBar .NavList .NavListItem 
-    {
+    #NavBar .NavList .NavListItem {
         margin-right: 3px;
-        display: block;  
+        display: block;
     }
-    #NavBar .Profile
-    {
-        right: 22px;
-        top: 4px;  
+    #NavBar .Profile {
+        right: 7px;
+        top: 4px;
     }
-    #NavBar .Profile .UserInfos .UserImg 
-    {
+    #NavBar .Profile .UserInfos .UserImg {
         height: 16px;
         width: 16px;
         align-content: center;
     }
-    #NavBar .Profile .UserInfos .UserImg .fa-user 
-    {
+    #NavBar .Profile .UserInfos .UserImg .fa-user {
         top: 17%;
         left: 17%;
         height: 5px;
         width: 5px;
-        font-size:x-small;
+        font-size: x-small;
     }
-    #NavBar .Profile .UserInfos .UserName
-    {
+    #NavBar .Profile .UserInfos .UserName {
         margin-top: 5px;
         margin-left: 2px;
         font-size: 9px;
     }
-    #NavBar .Profile .Favorite 
-    {
+    #NavBar .Profile .Favorite {
         margin-top: 1px;
         height: 15px;
         width: 15px;
     }
-    #NavBar .Profile .Favorite svg 
-    {
+
+    #NavBar .Profile .Favorite svg {
         height: 9px;
         width: 9px;
         padding: 1px;
         margin-top: 0;
     }
-    #NavBar .Profile .Cart 
-    {
+
+    #NavBar .Profile .Cart {
         margin-top: 1px;
         height: 15px;
         width: 15px;
-    } 
-    #NavBar .Profile .Cart svg 
-    {
+    }
+
+    #NavBar .Profile .Cart svg {
         height: 9px;
         width: 9px;
         padding: 1px;
         justify-content: center;
     }
-    #NavBar .Profile .Cart .badge
-    {
+
+    #NavBar .Profile .Cart .badge {
         font-size: 5px;
         height: 5px;
         width: 3px;
     }
-    .burgerMenu
-    {
+
+    .burgerMenu {
         display: block;
         padding: 1px;
     }
 
-    .burgerMenu.active .bar:nth-child(2)
-    {
+    .burgerMenu.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .burgerMenu.active .bar:nth-child(1)
-    {
+
+    .burgerMenu.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
-        background-color: #000000; 
+        background-color: #000000;
         width: 12px;
     }
-    .burgerMenu.active .bar:nth-child(3)
-    {
+
+    .burgerMenu.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
         background-color: #000000;
-        width: 12px; 
+        width: 12px;
     }
-    .burgerMenu.active
-    {
+
+    .burgerMenu.active {
         margin: 13px;
         padding: 14px;
         z-index: 9999;
         margin-left: 88%;
     }
-    .NavListItem
-    {
+
+    .NavListItem {
         margin: 16px 0;
     }
-    .NavList.active
-    {
+
+    .NavList.active {
         left: 0;
-    } 
-    #Container
-    {
-       
+    }
+
+    #Container {
         display: contents;
         grid-auto-rows: auto;
         margin-top: 3px;
         justify-items: center;
     }
-    #ItemDetails
-    {
 
-        display:block;
+    #ItemDetails {
+        display: block;
         grid-gap: 0;
         margin: 5px 16px;
     }
-    #ItemDetails .ImgGallery
-    {
+
+    #ItemDetails .ImgGallery {
         justify-self: start;
         margin: 0;
-        grid-column:none;
+        grid-column: none;
     }
-    #ItemDetails .ImgGallery .ImageShowed
-    {
+
+    #ItemDetails .ImgGallery .ImageShowed {
         height: 100%;
         width: 100%;
         margin: 0;
     }
-    #ItemDetails .ImgGallery .Gallery
-    {
+
+    #ItemDetails .ImgGallery .Gallery {
         height: auto;
         width: 100%;
     }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite #Quantite 
-    {
+
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite #Quantite {
         height: 25px;
         width: 55px;
     }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn 
-    {
+
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn {
         margin-left: 9px;
         padding: 7px;
         font-size: 16px;
         width: 174px;
     }
-    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite
-    {
+
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite {
         margin-left: 6px;
     }
-    #ItemDetails .ItemDetail #TelechargerDetails 
-    {
+
+    #ItemDetails .ItemDetail #TelechargerDetails {
         padding: 2px;
         font-size: 13px;
         border-radius: 20px;
         width: 285px;
     }
-    
-    #ItemDetails .ImgGallery .GallerySilde
-    {
+
+    #ItemDetails .ImgGallery .GallerySilde {
         height: 100px;
         width: 100%;
         margin: 0;
     }
-    #ItemDetails .ImgGallery .GallerySilde #RightArrow 
-    {
+
+    #ItemDetails .ImgGallery .GallerySilde #RightArrow {
         margin-left: 3px;
     }
-    #ItemDetails .ImgGallery .Gallery .GalleryImg
-    {
+
+    #ItemDetails .ImgGallery .Gallery .GalleryImg {
         margin-left: 10px;
         height: 56px;
         width: 47px;
     }
-    #ItemDetails .ImageShowed
-    {
+
+    #ItemDetails .ImageShowed {
         height: 50%;
         width: 80%;
     }
-    #ItemDetails .GallerySilde
-    {
+
+    #ItemDetails .GallerySilde {
         height: 20%;
         width: 80%;
     }
-    #ItemDetails .ItemDetail 
-    {
+
+    #ItemDetails .ItemDetail {
         padding: 5px;
         width: 100%;
-    } 
-    #ItemDetails .ItemDetail h3:first-of-type
-    {
+    }
+
+    #ItemDetails .ItemDetail h3:first-of-type {
         margin-top: 2px;
     }
-    #ItemDetails .ItemDetail .ItemDetailTags
-    {
+
+    #ItemDetails .ItemDetail .ItemDetailTags {
         margin: 0;
         width: 80%;
     }
-    #ItemDetails .ItemDetail .BaseHuile ul
-    {
+
+    #ItemDetails .ItemDetail .BaseHuile ul {
         font-size: small;
         padding: 2px;
         margin: 2px;
     }
-    #ItemDescription .ItemDescriptionItems 
-    {
+
+    #ItemDescription .ItemDescriptionItems {
         font-size: smaller;
     }
-    #ItemDescription .ItemDescriptionDes
-    {
+
+    #ItemDescription .ItemDescriptionDes {
         font-size: 11px;
     }
-    #Recommendation
-    {
+
+    #Recommendation {
         margin: 12px 0;
     }
-    #Recommendation h1
-    {
+
+    #Recommendation h1 {
         margin-bottom: 20px;
         font-size: 20px;
     }
-    .Recommendation
-    {
-        display:block;
+
+    .Recommendation {
+        display: block;
         padding: 10px;
         margin: 10px;
     }
-    .heartp
-    {
+
+    .heartp {
         margin-right: 20px;
     }
-    .imgproduit
-    {
+
+    .imgproduit {
         margin-right: 95px;
         width: 98%;
         height: 95px;
     }
-    .RecProduct{
+
+    .RecProduct {
         margin: 0 auto;
     }
-    .Recommendation .RecProduct
-    {
+
+    .Recommendation .RecProduct {
         height: auto;
         width: 80%;
         padding: 5px;
     }
-    .RecProductImg
-    {
+
+    .RecProductImg {
         align-content: center;
     }
-    .imgrecom
-    {
+
+    .imgrecom {
         height: 85px;
         width: 98%;
     }
-    .Recommendation .RecProduct .RecProductDes
-    {
+
+    .Recommendation .RecProduct .RecProductDes {
         margin: 10px;
     }
-    .Recommendation .RecProduct .RecProductDes .RecProductPrice
-    {
+
+    .Recommendation .RecProduct .RecProductDes .RecProductPrice {
         margin: 15px 0;
     }
+
     /* Recommendation Items END */
     /* Service Description */
-    #ServiceDescription
-    {
+    #ServiceDescription {
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 0;
         gap: 0px;
     }
-    #ServiceDescription div
-    {
+
+    #ServiceDescription div {
         margin: 2px;
     }
-    #ServiceDescription .ServiceDescriptionImg
-    {
+
+    #ServiceDescription .ServiceDescriptionImg {
         height: 15px;
-        width: 15px; 
+        width: 15px;
     }
-    #ServiceDescription .ServiceDescriptionImg svg
-    {
+
+    #ServiceDescription .ServiceDescriptionImg svg {
         padding-top: 2px;
     }
-    #ServiceDescription .ServiceDescriptionHead h4
-    {
+
+    #ServiceDescription .ServiceDescriptionHead h4 {
         font-size: 12px;
     }
-    #ServiceDescription .ServiceDescriptionP 
-    {
+
+    #ServiceDescription .ServiceDescriptionP {
         font-size: 8px;
     }
+
     /* Service Description END */
     /* Email Abonnement */
-    #EmailAbonnement
-    {
+    #EmailAbonnement {
         display: flex;
         flex-direction: column;
     }
-    #EmailAbonnement .Newsletter p
-    {
+
+    #EmailAbonnement .Newsletter p {
         font-size: 16px;
         text-align: center;
         margin: 7px;
     }
-    #EmailAbonnement .SentEmailForm
-    {
+
+    #EmailAbonnement .SentEmailForm {
         margin: 0;
         right: 0;
         align-items: center;
     }
-    #EmailAbonnement .SentEmailForm .TextInput 
-    {
+
+    #EmailAbonnement .SentEmailForm .TextInput {
         height: auto;
         width: auto;
         margin-right: 2px;
     }
-    #EmailAbonnement .SentEmailForm #SentButton 
-    {
+
+    #EmailAbonnement .SentEmailForm #SentButton {
         height: 26px;
         width: 27px;
         margin: 0;
     }
-    #EmailAbonnement .SentEmailForm #SentButton svg
-    {
+
+    #EmailAbonnement .SentEmailForm #SentButton svg {
         height: 18px;
         width: 18px;
         padding: 3px;
         margin: 1px;
     }
-    #EmailAbonnement .SentEmailForm div:first-of-type
-    {
+
+    #EmailAbonnement .SentEmailForm div:first-of-type {
         margin-left: 25%;
-    }  
-    #EmailAbonnement .SentEmailForm .CheckboxP
-    {
+    }
+
+    #EmailAbonnement .SentEmailForm .CheckboxP {
         margin: 6px;
         align-items: center;
     }
-    #EmailAbonnement .SentEmailForm .CheckboxP input 
-    {
+    #EmailAbonnement .SentEmailForm .CheckboxP input {
         margin-left: 19px;
         margin-right: 5px;
     }
-    #EmailAbonnement .SentEmailForm .CheckboxP p
-    {
+    #EmailAbonnement .SentEmailForm .CheckboxP p {
         font-size: 10px;
         margin-left: 21px;
         margin: 5px;
     }
-    /* Email Abonnement END */
-    /* Presentation Paraghraph */
-    #PresentationParagraph p
-    {
+    #PresentationParagraph p {
         margin: 7px;
         font-size: 10px;
         width: 85%;
     }
-    /* Presentation Paraghraph END */
-    /* Footer */
-    #FooterDiv .PageInfo
-    {
+    #FooterDiv .PageInfo {
         margin: 5px;
         display: flex;
         flex-direction: column;
         gap: 0px;
     }
-    #FooterDiv .PageInfo div
-    {
-        margin: 1px;
-        display: grid;
+    #FooterDiv .PageInfo div {
+        display: flex;
+        align-content: stretch;
+        justify-content: center;
     }
-
-    #FooterDiv .PageInfo ul li
-    {
+    #FooterDiv .PageInfo ul li {
         padding: 1px;
         font-size: 11px;
     }
-    #FooterDiv .PageInfo ul label
-    {
+    #FooterDiv .PageInfo ul label {
         font-size: 15px;
     }
-    #FooterDiv .PageInfo .Com #ComLogoimg
-    {
+    #FooterDiv .PageInfo .Com #ComLogoimg {
         width: 89px;
         height: 85px;
     }
-    #FooterDiv .PageInfo .Com .ComP
-    {
+    #FooterDiv .PageInfo .Com .ComP {
         font-size: 13px;
         grid-column: 3/5;
         align-items: center;
     }
-    #FooterDiv .PageInfo .column1
-    {
+    #FooterDiv .PageInfo .column1 {
         display: table;
         width: revert;
         margin: 9px;
     }
-    #FooterDiv .PageInfo .APropos
-    {
+    #FooterDiv .PageInfo .APropos {
         float: left;
     }
-    #FooterDiv .PageInfo .commercants
-    {
+    #FooterDiv .PageInfo .commercants {
         float: right;
     }
-    #FooterDiv .PageInfo .column2
-    {
+    #FooterDiv .PageInfo .column2 {
         display: table;
         width: revert;
         margin: 9px;
     }
-    #FooterDiv .PageInfo .Compte
-    {
+    #FooterDiv .PageInfo .Compte {
         float: left;
     }
-    #FooterDiv .PageInfo .Aide
-    {
+    #FooterDiv .PageInfo .Aide {
         float: right;
     }
     #FooterDiv .PageInfo .APropos,
     #FooterDiv .PageInfo .commercants,
     #FooterDiv .PageInfo .Compte,
-    #FooterDiv .PageInfo .Aide
-    {
+    #FooterDiv .PageInfo .Aide {
         text-align: center;
     }
-    #FooterDiv .ComInfo div
-    {
+    #FooterDiv .ComInfo div {
         width: 80%;
         font-size: 8px;
     }
-    #FooterDiv .ComInfo
-    {
+    #FooterDiv .ComInfo {
         display: flex;
         margin-left: 10px;
         margin-top: 0px;
     }
-    #FooterDiv .ComInfo .ComInfoSocial span
-    {
+    #FooterDiv .ComInfo .ComInfoSocial span {
         margin: 0px;
     }
-    #FooterDiv .ComInfo .ComInfoSocial .Facebook
-    {
+    #FooterDiv .ComInfo .ComInfoSocial .Facebook {
         margin-left: 3px;
     }
-    .ComInfoPaiment .MasterCard #MasterCard
-    {
+    .ComInfoPaiment .MasterCard #MasterCard {
         height: 15px;
         width: 15px;
     }
-    .ComInfoPaiment .Paypal #Paypal
-    {
+    .ComInfoPaiment .Paypal #Paypal {
         height: 15px;
         width: 15px;
     }
-    .ComInfoPaiment .VisaCard #VisaCard
-    {
+    .ComInfoPaiment .VisaCard #VisaCard {
         height: 15px;
         width: 15px;
     }
-    .ComInfoEgio .Egio .lazyloaded
-    {
+    .ComInfoEgio .Egio .lazyloaded {
         width: 45px;
     }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    #MessageDiv {
+        padding-top: 3px;
+        height: 25px;
+    }
+    #NavBar {
+        text-align: center;
+        height: 37px;
+        width: 100%;
+        justify-content: end;
+    }
+    #NavBar #NavLogo {
+        top: 6px;
+        left: 2px;
+        height: 23px;
+    }
+    .NavList {
+        position: absolute;
+        left: -106%;
+        transition: 0.3s;
+        padding: 6px;
+        margin: -22px;
+        top: 15px;
+        width: 50%;
+        background-color: #44b39b;
+        z-index: 9999;
+    }
+    #NavBar .NavList .NavListItem {
+        margin-right: 3px;
+        display: block;
+    }
+    #NavBar .Profile {
+        right: 47px;
+        top: 4px;
+    }
+    #NavBar .Profile .UserInfos .UserImg {
+        height: 28px;
+        width: 32px;
+        align-content: center;
+        top: -2px;
+    }
+    #NavBar .Profile .UserInfos .UserName {
+        margin-top: 2px;
+        margin-left: 2px;
+        font-size: 17px;
+    }
+    #NavBar .Profile .Favorite {
+        margin-top: -2px;
+        width: 31px;
+    }
+    #NavBar .Profile .Favorite svg {
+        height: 15px;
+        width: 16px;
+        padding: 2px;
+        margin-top: 4px;
+    }
+    #NavBar .Profile .Cart {
+        margin-top: -2px;
+        width: 31px;
+    }
+    #NavBar .Profile .Cart svg {
+        height: 15px;
+        width: 16px;
+        padding: 2px;
+        margin-left: 1px;
+    }
+    #NavBar .Profile .Cart .badge {
+        font-size: 6px;
+        height: 6px;
+        width: 3px;
+    }
+    .burgerMenu {
+        display: block;
+        padding: 1px;
+    }
+    .bar {
+        width: 38px;
+        height: 3px;
+    }
+    .burgerMenu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: #000000;
+        width: 15px;
+    }
+    .burgerMenu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: #000000;
+        width: 15px;
+    }
+    .burgerMenu.active {
+        margin: 8px;
+        padding: 25px;
+        z-index: 9999;
+        margin-right: -4%;
+    }
+    .NavListItem {
+        margin: 16px 0;
+    }
+    .NavList.active {
+        left: 52%;
+    }
+    #NavBar .Profile .UserInfos .UserImg .fa-user {
+        top: 15%;
+        left: 30%;
+    }
+    #Container {
+        display: contents;
+        grid-auto-rows: auto;
+        margin-top: 3px;
+    }
+    #ItemDetails {
+        grid-gap: 10px;
+        margin-top: 2px;
+    }
+    #ItemDetails .ImgGallery {
+        justify-self: initial;
+    }
+    #ItemDetails .ImgGallery .ImageShowed {
+        height: 70%;
+        width: 100%;
+        margin: 8px;
+    }
+
+    #ItemDetails .ImgGallery .GallerySilde {
+        height: 20%;
+        width: 100%;
+    }
+
+    #ItemDetails .ItemDetail .ItemDetailTags {
+        font-size: 18px;
+    }
+
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn {
+        margin-left: 26px;
+    }
+
+    #ItemDescription {
+        width: 100%;
+    }
+
+    #Recommendation {
+        margin: 12px 0;
+    }
+
+    #Recommendation h1 {
+        margin-bottom: 20px;
+    }
+
+    .Recommendation {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .heartp {
+        margin-right: 20px;
+    }
+
+    .imgproduit {
+        margin-right: 95px;
+        width: 98%;
+        height: 95px;
+    }
+
+    .RecProduct {
+
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .Recommendation .RecProduct {
+        height: auto;
+        width: 80%;
+        padding: 5px;
+    }
+    .RecProductImg {
+        align-content: center;
+    }
+    .imgrecom {
+        height: auto;
+        width: 100%;
+    }
+    .Recommendation .RecProduct .RecProductDes {
+        margin: 10px;
+    }
+    .Recommendation .RecProduct .RecProductDes .RecProductPrice {
+        margin: 15px 0;
+    }
+    #ServiceDescription 
+    {
+        width: auto;
+        gap: 0;
+    }
+    #EmailAbonnement .Newsletter
+    {
+        margin: 0;
+        align-content: flex-start;
+        width: 60%;
+        grid-column: initial;
+    }
+    #EmailAbonnement .Newsletter p {
+        margin-top: 42px;
+        margin-left: 17%;
+        margin-bottom: 47px;
+        font-size: 28px;
+    }
+    #EmailAbonnement .SentEmailForm .CheckboxP
+     {
+        align-items: center;
+        right: 41%;
+        width: max-content;
+    }
+    #EmailAbonnement .SentEmailForm .CheckboxP p {
+        font-size: 15px;
+        width: 90%;
+    }
+    #EmailAbonnement .SentEmailForm div:first-of-type {
+        margin-left: 27px;
+    }
+    #FooterDiv .PageInfo
+     {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    #FooterDiv .ComInfo .ComInfoSocial
+    {
+        display: inline;
+        margin: 0;
+    }
+    #FooterDiv .PageInfo .ComInfoEgio
+    {
+        align-self:flex-end;
+        display: inline-block;
+    }
+    #FooterDiv .ComInfo .ComInfoPaiment 
+    {
+        align-content: center;
+        display: inline-block;
+    }
+    #FooterDiv .PageInfo div {
+        display: flex;
+    }
+    #FooterDiv .PageInfo .column1 {
+        display: table;
+        width: revert;
+        margin: 9px;
+    }
+    #FooterDiv .PageInfo .APropos {
+        float: left;
+    }
+    #FooterDiv .PageInfo .commercants {
+        float: right;
+    }
+    #FooterDiv .PageInfo .column2 {
+        display: table;
+        width: revert;
+        margin: 9px;
+    }
+    #FooterDiv .PageInfo .Compte {
+        float: left;
+    }
+    #FooterDiv .PageInfo .Aide {
+        float: right;
+    }
+    #FooterDiv .PageInfo .Com #ComLogoimg {
+        width: 89px;
+        height: 85px;
+    }
+    #FooterDiv .PageInfo .Com .ComP {
+        font-size: medium;
+    }
+
 }
