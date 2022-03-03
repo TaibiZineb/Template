@@ -52,7 +52,6 @@ function ScrollRight() {
     document.getElementById("Slider").scrollLeft += 100;
 }
 
-
 function CompositionClick(){
 
     Composition.classList.add("SelectedItem");
@@ -73,19 +72,20 @@ function ProduitDetailClick(){
     ItemDescriptionDes.innerHTML = "<p>lorem ipsum dolor sit amet, consetetur sodipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, set diam voluptua. At vero eas et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergen, no sea takimata sanctus est Lorem ipsum dolor sit amet.    </p>";
 }
 
-
 burgerMenu.addEventListener("click", () => {
     burgerMenu.classList.toggle("active");
     NavList.classList.toggle("active");
 
 })
-
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => 
 {
     burgerMenu.classList.remove("active");
     NavList.classList.remove("active");
 
 }))
+
+
+
 
 
 

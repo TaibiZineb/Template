@@ -7,6 +7,7 @@ body {
     margin: 0.1px;
     overflow-x: hidden;
 }
+
 /* Alert Message Div */
 #MessageDiv {
     padding-top: 5px;
@@ -47,6 +48,10 @@ body {
 }
 #NavBar .NavList {
     margin-top: 25px;
+}
+#NavBar .NavList a {
+    text-decoration: none;
+    color:#000000;
 }
 #NavBar .NavList .NavListItem {
     display: inline;
@@ -569,13 +574,13 @@ body {
 /* Presentation Paraghraph END */
 /* Main Page Container END */
 /* Footer */
-#FooterDiv {
+#FooterDiv{
     color: #ffffff;
     justify-content: center;
     border: 1px #336766 solid;
     background-color: #336766;
 }
-#FooterDiv .PageInfo {
+#FooterDiv .PageInfo{
     margin: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -583,38 +588,35 @@ body {
     grid-auto-rows: minmax(100px, auto);
     border-bottom: 1px rgba(255, 255, 255, 0.7) solid;
 }
-#FooterDiv .PageInfo .column1 {
-    display: flex;
-    width: max-content;
+#FooterDiv .PageInfo a {
+    text-decoration: none;
+    color:#ffffff;
 }
-#FooterDiv .PageInfo .column2 {
-    display: flex;
-    width: max-content;
+#FooterDiv .PageInfo div{
+    margin: 18px;
 }
-#FooterDiv .PageInfo div {
-    margin: 10px;
-}
-#FooterDiv .PageInfo .Com {
+#FooterDiv .PageInfo .Com{
     text-align: center;
 }
-#FooterDiv .PageInfo .Com .ComHead h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#FooterDiv .PageInfo .Com .ComHead h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-#FooterDiv .PageInfo ul {
+#FooterDiv .PageInfo ul{
     list-style: none;
 }
-#FooterDiv .PageInfo ul a {
+#FooterDiv .PageInfo ul a{
     color: #ffffff;
     text-decoration: none;
 }
-#FooterDiv .PageInfo ul li {
+#FooterDiv .PageInfo ul li{
     padding: 5px 0;
     font-size: 13px;
 }
-#FooterDiv .PageInfo ul label {
+#FooterDiv .PageInfo ul label{
     font-size: 20px;
+    font-weight: 700;
 }
-#FooterDiv .ComInfo {
+#FooterDiv .ComInfo{
     display: flex;
     text-align: center;
     margin-top: -30px;
@@ -623,19 +625,26 @@ body {
     justify-content: space-around;
     z-index: 1000;
 }
-#FooterDiv .ComInfo div {
+.footer-links-holder {
+    width: 33.33333%;
+    position: relative;
+    float: left;
+    display: flex;
+
+}    
+.footer-links 
+{
+    width: max-content;
+}
+#FooterDiv .ComInfo div{
     width: 400px;
 }
-#FooterDiv .ComInfo .ComInfoSocial span {
+#FooterDiv .ComInfo .ComInfoSocial span{
     margin: 5px;
 }
-#FooterDiv .ComInfo .ComInfoSocial .Facebook {
+#FooterDiv .ComInfo .ComInfoSocial .Facebook{
     margin-left: 50px;
 }
-.column1e2
-    {
-        border-bottom: 1px rgb(167, 166, 166) solid;
-    }
 /* Footer END*/
 .badge {
     font-size: 14px;
@@ -891,8 +900,6 @@ body {
     .Recommendation .RecProduct .RecProductDes .RecProductPrice {
         margin: 15px 0;
     }
-    /* Recommendation Items END */
-    /* Service Description */
     #ServiceDescription {
         width: 100%;
         display: flex;
@@ -968,105 +975,43 @@ body {
         width: 85%;
     }
     #FooterDiv .PageInfo {
-        margin: 5px;
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-    }
-    #FooterDiv .PageInfo div {
-        display: flex;
-        align-content: stretch;
-        justify-content: center;
-        margin: 2px;
-    }
-    #FooterDiv .ComInfo .ComInfoSocial {
-        display: inline;
         margin: 0;
-    }    
-    #FooterDiv .ComInfo .ComInfoPaiment {
-        align-content: center;
+        display: inline-grid;
+    }
+    #FooterDiv .PageInfo div{
+        margin: 5p;
         display: inline-block;
     }
-    #FooterDiv .PageInfo .ComInfoEgio {
-        align-self: flex-end;
-        display: inline-block;
+    #FooterDiv .PageInfo .Com
+    {
+        margin-top: 0; 
+        margin-bottom: 0; 
+        margin-left: 0; 
     }
-    #FooterDiv .PageInfo ul li {
-        padding: 1px;
-        font-size: 11px;
+    #FooterDiv .footer-links-holder
+    {
+        display: grid;
     }
-    #FooterDiv .PageInfo ul label {
-        font-size: 15px;
-    }
-    #FooterDiv .PageInfo .Com #ComLogoimg {
-        width: 89px;
-        height: 85px;
-    }
+    
     #FooterDiv .PageInfo .Com .ComP {
         font-size: 13px;
-        grid-column: 3/5;
+        grid-column: 1/3;
         align-items: center;
+        flex-direction: row;
     }
-    #FooterDiv .PageInfo .column1 {
-        display: table;
-        width: revert;
-        margin-left: 31px;
-
+    #FooterDiv .PageInfo .Com .ComLogo img 
+    {
+        width: 80px;
+        height: 80px;
     }
-    #FooterDiv .PageInfo .APropos {
-        float: left;
+    #FooterDiv .ComInfo 
+    {
+        margin-top: 0; 
+        margin-bottom: 0; 
+        margin-left: 0; 
+        display: block;
     }
-    #FooterDiv .PageInfo .commercants {
-        float: left;
-    }
-    #FooterDiv .PageInfo .column2 {
-        display: table;
-        width: revert;
-        margin: 9px;
-    }
-    #FooterDiv .PageInfo .Compte {
-        float: left;
-    }
-    #FooterDiv .PageInfo .Aide {
-        float: left;
-    }
-    #FooterDiv .PageInfo .APropos,
-    #FooterDiv .PageInfo .commercants,
-    #FooterDiv .PageInfo .Compte,
-    #FooterDiv .PageInfo .Aide {
-        text-align: initial;
-    }
-    #FooterDiv .ComInfo div {
-        width: 80%;
-        font-size: 8px;
-    }
-    #FooterDiv .ComInfo {
-        display: flex;
-        margin-left: 10px;
-        margin-top: 0px;
-    }
-    #FooterDiv .ComInfo .ComInfoSocial span {
-        margin: 0px;
-    }
-    #FooterDiv .ComInfo .ComInfoSocial .Facebook {
-        margin-left: 3px;
-    }
-    .ComInfoPaiment .MasterCard #MasterCard {
-        height: 15px;
-        width: 15px;
-    }
-    .ComInfoPaiment .Paypal #Paypal {
-        height: 15px;
-        width: 15px;
-    }
-    .ComInfoPaiment .VisaCard #VisaCard {
-        height: 15px;
-        width: 15px;
-    }
-    .ComInfoEgio .Egio .lazyloaded {
-        width: 45px;
-    }
-}
+}    
 @media (min-width:768px) and (max-width:1024px) {
     #MessageDiv {
         padding-top: 3px;
@@ -1285,59 +1230,34 @@ body {
     #EmailAbonnement .SentEmailForm div:first-of-type {
         margin-left: 27px;
     }
-    #FooterDiv .PageInfo
-     {
-        margin: 5px;
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-    }
-    #FooterDiv .ComInfo .ComInfoSocial
+    #FooterDiv .PageInfo div
     {
-        display: inline;
         margin: 0;
     }
-    #FooterDiv .PageInfo .ComInfoEgio
+    #FooterDiv .PageInfo .Com .ComLogo img 
     {
-        align-self:flex-end;
-        display: inline-block;
+        width: 150px;
     }
-    #FooterDiv .ComInfo .ComInfoPaiment 
+    .footer-links
     {
-        align-content: center;
-        display: inline-block;
+        margin: 3px;
     }
-    #FooterDiv .PageInfo div {
-        display: flex;
+    #FooterDiv .PageInfo .Com
+    {
+        margin-left: -42px;
     }
-    #FooterDiv .PageInfo .column1 {
-        display: table;
-        width: revert;
-        margin: 9px;
+    #FooterDiv .ComInfo 
+    {
+        margin-bottom: 0; 
+        margin-left: 0; 
     }
-    #FooterDiv .PageInfo .APropos {
-        float: left;
-    }
-    #FooterDiv .PageInfo .commercants {
-        float: right;
-    }
-    #FooterDiv .PageInfo .column2 {
-        display: table;
-        width: revert;
-        margin: 9px;
-    }
-    #FooterDiv .PageInfo .Compte {
-        float: left;
-    }
-    #FooterDiv .PageInfo .Aide {
-        float: right;
-    }
-    #FooterDiv .PageInfo .Com #ComLogoimg {
-        width: 89px;
-        height: 85px;
-    }
-    #FooterDiv .PageInfo .Com .ComP {
-        font-size: medium;
-    }
+}
 
+@media all and (min-width: 1024px) and (max-width: 1280px)
+{
+
+}
+@media all and (orientation: portrait)
+{
+    
 }
