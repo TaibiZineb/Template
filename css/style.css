@@ -992,7 +992,6 @@ body {
     {
         display: grid;
     }
-    
     #FooterDiv .PageInfo .Com .ComP {
         font-size: 13px;
         grid-column: 1/3;
@@ -1134,47 +1133,37 @@ body {
         width: 100%;
         margin: 8px;
     }
-
     #ItemDetails .ImgGallery .GallerySilde {
         height: 20%;
         width: 100%;
     }
-
     #ItemDetails .ItemDetail .ItemDetailTags {
         font-size: 18px;
     }
-
     #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn {
         margin-left: 26px;
     }
-
     #ItemDescription {
-        width: 100%;
+        width: 89%;
     }
-
     #Recommendation {
         margin: 12px 0;
     }
-
     #Recommendation h1 {
         margin-bottom: 20px;
     }
-
     .Recommendation {
         padding: 10px;
         margin: 10px;
     }
-
     .heartp {
         margin-right: 20px;
     }
-
     .imgproduit {
         margin-right: 95px;
         width: 98%;
         height: 95px;
     }
-
     .RecProduct {
 
         margin: 0 auto;
@@ -1252,12 +1241,341 @@ body {
         margin-left: 0; 
     }
 }
-
-@media all and (min-width: 1024px) and (max-width: 1280px)
+@media all and (orientation: landscape)
 {
+    #MessageDiv 
+    {
+        justify-content:start;
+    }
+    #MessageDiv div p
+    {
+        position: absolute;
+        right: 211px;
+    }
+    #MessageDiv div span 
+    {
+        position: absolute;
+        right: -175px;
+        top: 3px;
+    }
+    #NavBar #NavLogo
+    {
+        top: 7px;
+        left: 15px;
+        width: 151px;
+    }
+    .burgerMenu {
+        display: block;
+        padding: 6px;
+    }
+    .burgerMenu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .burgerMenu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: #000000;
+        width: 12px;
+    }
+    .burgerMenu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: #000000;
+        width: 12px;
+    }
+    .burgerMenu.active {
+        margin: 31px;
+        z-index: 9999;
+        margin-right: 0%;
+    }
+    .NavListItem {
+        margin: 8px 0;
+    }
+    .NavList.active {
+        left: 50%;
+    }
+    #NavBar .NavList .NavListItem {
+        margin-right: 3px;
+        display: block;
+    }
+    #NavBar .Profile
+    {
+        right: 45px;
+        top: 4px;
+    }
+    #NavBar .Profile .UserInfos .UserImg
+    {
+        height: 36px;
+        width: 36px;
+    }
+    #NavBar {
+        text-align: center;
+        height: 47px;
+        width: 100%;
+        justify-content: end;
+    }
+    .NavList {
+        position: absolute;
+        left: -106%;
+        transition: 0.3s;
+        padding: 6px;
+        margin: -22px;
+        top: 15px;
+        width: 50%;
+        background-color: #44b39b;
+        z-index: 9999;
+        margin-top: 31px;
+    }
+    #Container {
+        display: contents;
+        grid-auto-rows: auto;
+        margin-top: 3px;
+        justify-items: center;
+    }
+    #ItemDetails {
+        display: block;
+        grid-gap: 0;
+        margin: 5px 16px;
+    }
+    #ItemDetails .ImgGallery {
+        justify-self: start;
+        margin: 0;
+        grid-column: none;
+        display: flex;
+    }
+    #ItemDetails .ImgGallery .ImageShowed {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    #ItemDetails .ImgGallery .Gallery {
+        height: auto;
+        width: 100%;
+    }
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite #Quantite {
+        height: 25px;
+        width: 55px;
+    }
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .AjouterPanierBtn {
+        margin-left: 9px;
+        padding: 7px;
+        font-size: 16px;
+        width: 174px;
+    }
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite .favorite {
+        margin-left: 6px;
+    }
+    #ItemDetails .ItemDetail #TelechargerDetails {
+        padding: 2px;
+        font-size: 13px;
+        border-radius: 20px;
+        width: 285px;
+    }
+    #ItemDetails .ImgGallery .GallerySilde {
+        height: 100px;
+        width: 100%;
+        margin: auto;
+    }
+    #ItemDetails .ImgGallery .GallerySilde #RightArrow {
+        margin-left: 3px;
+    }
+    #ItemDetails .ImgGallery .Gallery .GalleryImg {
+        margin-left: 10px;
+        height: 56px;
+        width: 47px;
+    }
+    #ItemDetails .ImageShowed {
+        height: 50%;
+        width: 80%;
+    }
+    #ItemDetails .GallerySilde {
+        height: 20%;
+        width: 80%;
+    }
+    #ItemDetails .ItemDetail {
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    #ItemDetails .ItemDetail h3:first-of-type {
+        margin-top: 2px;
+    }
+    #ItemDetails .ItemDetail .BaseHuile ul {
+        font-size: small;
+        padding: 2px;
+        margin: 2px;
+    }
+    #ItemDescription .ItemDescriptionItems {
+        font-size: smaller;
+    }
+    #ItemDescription .ItemDescriptionDes {
+        font-size: 11px;
+    }
+    .ItemDetailPrice, .OliviaHealth, .BaseHuile ul, .Origine ul
+    {
+        justify-content: center;
+    }
+    #ItemDetails .ItemDetail .ProductCommand .ProductQuantite
+    {
+        display: inline-flex;
+    }
+    #ItemDescription
+    {
+        margin: 3px;
+        width: 95%;
+    }
+    #Recommendation {
+        margin: 12px 0;
+    }
+    #Recommendation h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .Recommendation {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+    }
+    .heartp {
+        margin-right: 20px;
+    }
+    .imgproduit {
+        margin-right: 95px;
+        width: 98%;
+        height: 95px;
+    }
+    .RecProduct {
+        margin: 0 auto;
+    }
+    .Recommendation .RecProduct {
+        height: auto;
+        width: 80%;
+        padding: 5px;
+    }
+    .RecProductImg {
+        align-content: center;
+    }
+    .imgrecom {
+        height: 85px;
+        width: 98%;
+    }
+    .Recommendation .RecProduct .RecProductDes {
+        margin: 10px;
+    }
+    .Recommendation .RecProduct .RecProductDes .RecProductPrice {
+        margin: 15px 0;
+    }
+    #ServiceDescription {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0px;
+    }
+    #ServiceDescription div {
+        margin: 2px;
+    }
+    #ServiceDescription .ServiceDescriptionImg {
+        height: 15px;
+        width: 15px;
+    }
+    #ServiceDescription .ServiceDescriptionImg svg {
+        padding-top: 2px;
+    }
+    #ServiceDescription .ServiceDescriptionHead h4 {
+        font-size: 12px;
+    }
+    #ServiceDescription .ServiceDescriptionP {
+        font-size: 8px;
+    }
+    #EmailAbonnement {
+        display: flex;
+        flex-direction: column;
+    }
+    #EmailAbonnement .Newsletter p {
+        font-size: 16px;
+        text-align: center;
+        margin: 7px;
+    }
+    #EmailAbonnement .SentEmailForm {
+        margin: 0;
+        right: 0;
+        align-items: center;
+    }
+    #EmailAbonnement .SentEmailForm .TextInput {
+        height: auto;
+        width: auto;
+        margin-right: 2px;
+    }
+    #EmailAbonnement .SentEmailForm #SentButton {
+        height: 26px;
+        width: 27px;
+        margin: 0;
+    }
+    #EmailAbonnement .SentEmailForm #SentButton svg {
+        height: 18px;
+        width: 18px;
+        padding: 3px;
+        margin: 1px;
+    }
+    #EmailAbonnement .SentEmailForm div:first-of-type {
+        margin-left: 25%;
+    }
+    #EmailAbonnement .SentEmailForm .CheckboxP {
+        margin: 6px;
+        align-items: center;
+    }
+    #EmailAbonnement .SentEmailForm .CheckboxP input {
+        margin-left: 19px;
+        margin-right: 5px;
+    }
+    #EmailAbonnement .SentEmailForm .CheckboxP p {
+        font-size: 10px;
+        margin-left: 21px;
+        margin: 5px;
+    }
+    #PresentationParagraph p {
+        margin: 7px;
+        font-size: 10px;
+        width: 85%;
+    }
+    #FooterDiv .PageInfo {
+        margin: 0;
+        display: inline-grid;
+    }
+    #FooterDiv .PageInfo div{
+        margin: 5p;
+        display: inline-block;
+    }
+    #FooterDiv .PageInfo .Com
+    {
+        margin-top: 0; 
+        margin-bottom: 0; 
+        margin-left: 0; 
+    }
+    #FooterDiv .footer-links-holder
+    {
+        display: grid;
+    }
+    #FooterDiv .PageInfo .Com .ComP {
+        font-size: 13px;
+        grid-column: 1/3;
+        align-items: center;
+        flex-direction: row;
+    }
+    #FooterDiv .PageInfo .Com .ComLogo img 
+    {
+        width: 80px;
+        height: 80px;
+    }
+    #FooterDiv .ComInfo 
+    {
+        margin-top: 0; 
+        margin-bottom: 0; 
+        margin-left: 0; 
+        display: block;
+    }
 
-}
-@media all and (orientation: portrait)
-{
+
     
 }
+
+
