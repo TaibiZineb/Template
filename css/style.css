@@ -657,7 +657,7 @@ body {
     color: blanchedalmond;
     background: #44b39b;
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:600px) and (orientation: portrait) {
     #MessageDiv {
         height: 12px;
     }
@@ -1241,7 +1241,7 @@ body {
         margin-left: 0; 
     }
 }
-@media all and (orientation: landscape)
+@media (max-width:700px) and (orientation: landscape)
 {
     #MessageDiv 
     {
